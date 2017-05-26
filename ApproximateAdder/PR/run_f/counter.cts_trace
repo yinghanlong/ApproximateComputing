@@ -1,0 +1,48 @@
+
+
+
+
+
+Tracing Clock clock
+
+****** Clock Tree (clock) Structure
+Nr. Subtrees                   : 1
+Nr. Sinks                      : 4
+Nr.          Rising  Sync Pins : 4
+Nr. Inverter Rising  Sync Pins : 0
+Nr.          Falling Sync Pins : 0
+Nr. Inverter Falling Sync Pins : 0
+
+** Leaf Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+DFF_X1 (CK)                             4
+-----------------------------------------------
+
+
+
+
+** Gate Component Input Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+-----------------------------------------------
+
+
+
+** Subtree Detail
+*DEPTH 0 Input_Pin: (EMPTY) Output_Pin: (clock) Cell: (EMPTY) Net: (clock) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 4
+          Nr. of     Rising  Sync Pins  : 4
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+***********************************************************
+
+****** Pre CTS Detail Structure for clock clock
+*DEPTH 0: clock
+ (Sync)value_reg_0_/CK
+ (Sync)value_reg_1_/CK
+ (Sync)value_reg_2_/CK
+ (Sync)value_reg_3_/CK

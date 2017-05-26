@@ -1,0 +1,38 @@
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort medium
+Design : Adder
+Version: B-2008.09
+Date   : Fri May 26 17:03:34 2017
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary_PDKv1_2_v2008_10 (File: /home/pxs/synopsys/NANgate_library/NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   9.9883 uW   (66%)
+  Net Switching Power  =   5.0915 uW   (34%)
+                         ---------
+Total Dynamic Power    =  15.0798 uW  (100%)
+
+Cell Leakage Power     = 491.5561 nW
+
+1

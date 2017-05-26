@@ -1,0 +1,25 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : area
+Design : Adder
+Version: B-2008.09
+Date   : Wed May 24 17:05:27 2017
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary_PDKv1_2_v2008_10 (File: /home/pxs/synopsys/NANgate_library/NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.db)
+
+Number of ports:               27
+Number of nets:                45
+Number of cells:               18
+Number of references:          10
+
+Combinational area:         41.496000
+Noncombinational area:      43.092001
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:            84.588001
+Total area:                 undefined
+1

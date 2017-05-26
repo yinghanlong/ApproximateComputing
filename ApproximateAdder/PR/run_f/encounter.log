@@ -1,0 +1,805 @@
+Checking out Encounter license ...
+SOC_Encounter_GXL 8.1 license checkout succeeded.
+This Encounter release has been compiled with OA version 22.04-p032.
+sourcing /usr/cadence/encounter/etc/fe/rdaDSL.tcl
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2008.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: First Encounter v08.10-p004_1 (32bit) 11/04/2008 14:34 (Linux 2.6)
+@(#)CDS: NanoRoute v08.10-p008 NR081027-0018/USR58-UB (database version 2.30, 67.1.1) {superthreading v1.11}
+@(#)CDS: CeltIC v08.10-p002_1 (32bit) 10/23/2008 22:04:14 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CTE v08.10-p016_1 (32bit) Oct 26 2008 15:11:51 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CPE v08.10-p009
+--- Starting "First Encounter v08.10-p004_1" on Thu May 25 16:53:07 2017 (mem=62.2M) ---
+--- Running on 192.168.20.154 (i686 w/Linux 2.6.18-128.el5) ---
+This version was compiled on Tue Nov 4 14:34:21 PST 2008.
+Set DBUPerIGU to 1000.
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Sourcing tcl/tk file "run_encounter.tcl" ...
+<CMD> loadConfig design.conf
+Reading config file - design.conf
+
+Loading Lef file /home/pxs/synopsys/NANgate_library/NangateOpenCellLibrary_PDKv1_2_v2008_10.lef...
+Set DBUPerIGU to M2 pitch 380.
+Initializing default via types and wire widths ...
+**ERROR: (SOCLF-82):	The y coordinate value 0.5260
+in pin 'A' in macro 'AOI221_X1' is not on the manufacturing grid.
+It's likely to result in placement/routing that can not be manufactured.
+**ERROR: (SOCLF-82):	The y coordinate value 0.5260
+in pin 'A' in macro 'AOI221_X1' is not on the manufacturing grid.
+It's likely to result in placement/routing that can not be manufactured.
+
+Power Planner/ViaGen version 8.1.45 promoted on 09/01/2008.
+viaInitial starts at Thu May 25 16:53:07 2017
+viaInitial ends at Thu May 25 16:53:07 2017
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/home/pxs/ApproximateAdder/./SYNTH/run_s/Adder_final.v'
+
+*** Memory Usage v0.144 (Current mem = 185.492M, initial mem = 62.227M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=185.5M) ***
+Set top cell to Adder.
+Reading common timing library '/home/pxs/synopsys/NANgate_library/NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib' ...
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 29010) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 29032) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 30291) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 30313) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75282) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75304) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75326) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75348) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75588) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75610) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75632) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75654) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75696) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75718) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75740) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75762) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 76900) The sdf_cond statement(s) in the cell SDFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 76922) The sdf_cond statement(s) in the cell SDFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 76944) The sdf_cond statement(s) in the cell SDFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 76966) The sdf_cond statement(s) in the cell SDFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+ read 134 cells in library 'NangateOpenCellLibrary_PDKv1_2_v2008_10' 
+*** End library_loading (cpu=0.01min, mem=4.2M, fe_cpu=0.06min, fe_mem=189.7M) ***
+Starting recursive module instantiation check.
+No recursion found.
+*****NEW dbFlattenCell is used.
+Flattening Cell Adder ...
+*** Netlist is unique.
+** info: there are 143 modules.
+** info: there are 41 stdCell insts.
+
+*** Memory Usage v0.144 (Current mem = 190.008M, initial mem = 62.227M) ***
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+INFO (CTE): constraints read successfully
+*** Read timing constraints (cpu=0:00:00.0 mem=192.0M) ***
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X2 BUF_X1 BUF_X4 BUF_X8 CLKBUF_X1 CLKBUF_X3 CLKBUF_X2
+Total number of usable buffers: 7
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X2 INV_X1 INV_X16 INV_X32 INV_X4 INV_X8
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: BUF_X16 BUF_X32
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+*info: set bottom ioPad orient R0
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF.
+Set Input Pin Transition Delay as 120 ps.
+<CMD> commitConfig
+**WARN: (SOCSYT-3034):	commitConfig can only be run once per session.
+ This command is skipped since it's already run by user or by loadConfig command implicitly.
+<CMD> floorPlan -s 10 10 40 40 40 40
+Adjusting Core to Left to: 40.0900. Core to Bottom to: 40.0400.
+<CMD> addRing -spacing_bottom 10 -width_left 10 -width_bottom 10 -width_top 10 -spacing_top 10 -layer_bottom metal5 -width_right 10 -around core -center 1 -layer_top metal5 -spacing_right 10 -spacing_left 10 -layer_right metal6 -layer_left metal6 -nets { VSS VDD }
+
+
+The power planner created 8 wires.
+
+<CMD> addStripe -set_to_set_distance 40 -spacing 5 -xleft_offset 20 -layer metal6 -width 5 -nets { VSS VDD }
+**WARN: (SOCPP-2008):	AddStripe option -remove_floating_stripe_over_block is ON so all fragmented stripes within a block will be removed.
+  To turn OFF, setAddStripeOption -remove_floating_stripe_over_block 0.
+
+Starting stripe generation ...
+Stripe generation is complete.
+
+
+<CMD> placeDesign
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** Starting "NanoPlace(TM) placement v0.845 (mem=206.4M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:00.3 mem=207.9M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:00.4 mem=209.7M) ***
+Options: timingDriven ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (SOCDB-2082):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+#std cell=41 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=55 #term=134 #term/net=2.44, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=26
+stdCell: 41 single + 0 double + 0 multi
+Total standard cell length = 0.0513 (mm), area = 0.0001 (mm^2)
+Average module density = 0.742.
+Density for the design = 0.742.
+       = stdcell_area 270 (72 um^2) / alloc_area 364 (97 um^2).
+Pin Density = 0.496.
+            = total # of pins 134 / total Instance area 270.
+Iteration  1: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 210.1M
+Iteration  2: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 210.1M
+Iteration  3: Total net bbox = 1.123e+01 (4.01e+00 7.22e+00)
+              Est.  stn bbox = 1.123e+01 (4.01e+00 7.22e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 210.1M
+Iteration  4: Total net bbox = 2.936e+01 (1.32e+01 1.61e+01)
+              Est.  stn bbox = 2.936e+01 (1.32e+01 1.61e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 210.1M
+Iteration  5: Total net bbox = 4.405e+01 (2.19e+01 2.22e+01)
+              Est.  stn bbox = 4.405e+01 (2.19e+01 2.22e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 210.1M
+Iteration  6: Total net bbox = 1.199e+03 (6.25e+02 5.74e+02)
+              Est.  stn bbox = 1.218e+03 (6.41e+02 5.77e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 210.1M
+*** cost = 1.199e+03 (6.25e+02 5.74e+02) (cpu for global=0:00:00.0) real=0:00:00.0***
+Core Placement runtime cpu: 0:00:00.0 real: 0:00:00.0
+Starting refinePlace ...
+Placement tweakage begins.
+wire length = 1.256e+03 = 5.014e+02 H + 7.549e+02 V
+wire length = 1.187e+03 = 4.328e+02 H + 7.547e+02 V
+Placement tweakage ends.
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =         4.75 um
+  inst (Sum_reg_3_) with max move: (44.84, 40.04) -> (40.09, 40.04)
+  mean    (X+Y) =         1.68 um
+Total instances flipped : 1
+Total instances moved : 32
+*** cpu=0:00:00.0   mem=210.1M  mem(used)=0.0M***
+Total net length = 1.194e+03 (4.329e+02 7.608e+02) (ext = 1.131e+03)
+*** End of Placement (cpu=0:00:00.4, real=0:00:01.0, mem=210.1M) ***
+default core: bins with density >  0.75 =    0 % ( 0 / 1 )
+*** Free Virtual Timing Model ...(mem=210.1M)
+Starting IO pin assignment...
+Completed IO pin assignment.
+**WARN: (SOCSP-9025):	No scan chain specified/traced.
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 1, real = 0: 0: 1, mem = 210.1M **
+<CMD> sroute -connect padPin
+No routing obstructions were found in the design.
+*** Begin SPECIAL ROUTE on Thu May 25 16:53:09 2017 ***
+Sroute/fcroute version 8.1.45 promoted on 09/01/2008.
+SPECIAL ROUTE ran on directory: /home/pxs/ApproximateAdder/PR/run_f
+SPECIAL ROUTE ran on machine: 192.168.20.154 (Linux 2.6.18-128.el5 Xeon 3.59Ghz)
+
+Begin option processing ...
+(from .sroute_5500.conf) srouteConnectPowerBump set to false
+(from .sroute_5500.conf) routeSpecial set to true
+(from .sroute_5500.conf) srouteConnectBlockPin set to false
+(from .sroute_5500.conf) srouteConnectCorePin set to false
+(from .sroute_5500.conf) srouteConnectStripe set to false
+(from .sroute_5500.conf) srouteFollowCorePinEnd set to 3
+(from .sroute_5500.conf) srouteJogControl set to "preferWithChanges differentLayer"
+(from .sroute_5500.conf) sroutePadPinAllPorts set to true
+(from .sroute_5500.conf) sroutePreserveExistingRoutes set to true
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 379.00 megs.
+
+Reading LEF technology information...
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 20 layers, 10 routing layers, 1 overlap layer
+Read in 134 macros, 5 used
+Read in 5 components
+  5 core components: 0 unplaced, 5 placed, 0 fixed
+Read in 27 physical pins
+  27 physical pins: 0 unplaced, 27 placed, 0 fixed
+Read in 27 nets
+Read in 2 special nets, 2 routed
+Read in 37 terminals
+Begin power routing ...
+**WARN: (SOCSR-1311):	No valid VIARULE for layer pair metal1, metal2 of width 140, height 140. 
+Similar rule is used instead.
+	Similar messages will be suppressed.
+**WARN: (SOCSR-1256):	Net VDD does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net VDD does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+**WARN: (SOCSR-1256):	Net VSS does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net VSS does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+  Number of IO ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 381.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 27 io pins ...
+ Updating DB with 28 via definition ...
+
+
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:1
+sroute: Total Memory used = 2.52 megs
+sroute: Total Peak Memory used = 212.67 megs
+<CMD> specifyClockTree -clkfile clock.ctstch
+
+Reading clock tree spec file 'clock.ctstch' ...
+
+Using detail cap. scale factor for clock nets.
+RouteType               : FE_CTS_DEFAULT
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.128449(V=0.142029 H=0.11487) (ff/um) [6.42246e-05]
+Est. Res                : 2.53571(V=1.5 H=3.57143)(ohm/um) [0.00126786]
+Est. Via Res            : 5(ohm) [11]
+Est. Via Cap            : 0.0387162(ff)
+M1(H) w=0.065(um) s=0.065(um) p=0.19(um) es=0.315(um) cap=0.11(ff/um) res=5.85(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.07(um) s=0.07(um) p=0.19(um) es=0.31(um) cap=0.115(ff/um) res=3.57(ohm/um) viaRes=6(ohm) viaCap=0.0362505(ff)
+M3(H) w=0.07(um) s=0.07(um) p=0.19(um) es=0.31(um) cap=0.115(ff/um) res=3.57(ohm/um) viaRes=5(ohm) viaCap=0.0376644(ff)
+M4(V) w=0.14(um) s=0.14(um) p=0.28(um) es=0.42(um) cap=0.142(ff/um) res=1.5(ohm/um) viaRes=5(ohm) viaCap=0.0387162(ff)
+M5(H) w=0.14(um) s=0.14(um) p=0.28(um) es=0.42(um) cap=0.142(ff/um) res=1.5(ohm/um) viaRes=3(ohm) viaCap=0.039768(ff)
+M6(V) w=0.14(um) s=0.14(um) p=0.28(um) es=0.42(um) cap=0.142(ff/um) res=1.5(ohm/um) viaRes=3(ohm) viaCap=0.039768(ff)
+M7(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.176(ff/um) res=0.188(ohm/um) viaRes=3(ohm) viaCap=0.0903797(ff)
+M8(V) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.176(ff/um) res=0.188(ohm/um) viaRes=1(ohm) viaCap=0.140992(ff)
+M9(H) w=0.8(um) s=0.8(um) p=1.6(um) es=2.4(um) cap=0.247(ff/um) res=0.0375(ohm/um) viaRes=1(ohm) viaCap=0.268326(ff)
+M10(V) w=0.8(um) s=0.8(um) p=1.6(um) es=2.4(um) cap=0.187(ff/um) res=0.0375(ohm/um) viaRes=0.5(ohm) viaCap=0.347179(ff)
+
+RouteType               : FE_CTS_DEFAULT_LEAF
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.128449(V=0.142029 H=0.11487) (ff/um) [6.42246e-05]
+Est. Res                : 2.53571(V=1.5 H=3.57143)(ohm/um) [0.00126786]
+Est. Via Res            : 5(ohm) [11]
+Est. Via Cap            : 0.0387162(ff)
+M1(H) w=0.065(um) s=0.065(um) p=0.19(um) es=0.315(um) cap=0.11(ff/um) res=5.85(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.07(um) s=0.07(um) p=0.19(um) es=0.31(um) cap=0.115(ff/um) res=3.57(ohm/um) viaRes=6(ohm) viaCap=0.0362505(ff)
+M3(H) w=0.07(um) s=0.07(um) p=0.19(um) es=0.31(um) cap=0.115(ff/um) res=3.57(ohm/um) viaRes=5(ohm) viaCap=0.0376644(ff)
+M4(V) w=0.14(um) s=0.14(um) p=0.28(um) es=0.42(um) cap=0.142(ff/um) res=1.5(ohm/um) viaRes=5(ohm) viaCap=0.0387162(ff)
+M5(H) w=0.14(um) s=0.14(um) p=0.28(um) es=0.42(um) cap=0.142(ff/um) res=1.5(ohm/um) viaRes=3(ohm) viaCap=0.039768(ff)
+M6(V) w=0.14(um) s=0.14(um) p=0.28(um) es=0.42(um) cap=0.142(ff/um) res=1.5(ohm/um) viaRes=3(ohm) viaCap=0.039768(ff)
+M7(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.176(ff/um) res=0.188(ohm/um) viaRes=3(ohm) viaCap=0.0903797(ff)
+M8(V) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.176(ff/um) res=0.188(ohm/um) viaRes=1(ohm) viaCap=0.140992(ff)
+M9(H) w=0.8(um) s=0.8(um) p=1.6(um) es=2.4(um) cap=0.247(ff/um) res=0.0375(ohm/um) viaRes=1(ohm) viaCap=0.268326(ff)
+M10(V) w=0.8(um) s=0.8(um) p=1.6(um) es=2.4(um) cap=0.187(ff/um) res=0.0375(ohm/um) viaRes=0.5(ohm) viaCap=0.347179(ff)
+
+
+****** AutoClockRootPin ******
+AutoClockRootPin 1: clock
+# NoGating         NO
+# SetDPinAsSync    NO
+# SetIoPinAsSync   NO
+# SetAsyncSRPinAsSync   NO
+# SetTriStEnPinAsSync   NO
+# SetBBoxPinAsSync   NO
+# RouteClkNet      NO
+# PostOpt          YES
+# RouteType        FE_CTS_DEFAULT
+# LeafRouteType    FE_CTS_DEFAULT_LEAF
+
+***** !! NOTE !! *****
+
+CTS treats D-pins and I/O pins as non-synchronous pins by default.
+If you want to change the behavior, you need to use the SetDPinAsSync
+or SetIoPinAsSync statement in the clock tree specification file,
+or use the setCTSMode -traceDPinAsLeaf {true|false} command,
+or use the setCTSMode -traceIoPinAsLeaf {true|false} command
+before specifyClockTree command.
+
+*** End specifyClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=217.7M) ***
+<CMD> ckSynthesis -rguide cts.rguide -report clock.ctsrpt
+Redoing specifyClockTree  -clkfile clock.ctstch  ...
+
+
+ckSynthesis Option :  -rguide cts.rguide -report clock.ctsrpt 
+***** Allocate Placement Memory Finished (MEM: 217.676M)
+
+Start to trace clock trees ...
+*** Begin Tracer (mem=217.7M) ***
+Tracing Clock clock ...
+*** End Tracer (mem=217.7M) ***
+***** Allocate Obstruction Memory  Finished (MEM: 217.676M)
+
+****** Clock Tree (clock) Structure
+Max. Skew           : 300(ps)
+Max. Sink Transition: 400(ps)
+Max. Buf Transition : 400(ps)
+Max. Delay          : 10000(ps)
+Min. Delay          : 0(ps)
+Buffer              : (CLKBUF_X1) (INV_X1) (BUF_X2) (CLKBUF_X2) (INV_X2) (CLKBUF_X3) (BUF_X4) (INV_X4) (INV_X8) 
+Nr. Subtrees                    : 1
+Nr. Sinks                       : 9
+Nr.          Rising  Sync Pins  : 9
+Nr. Inverter Rising  Sync Pins  : 0
+Nr.          Falling Sync Pins  : 0
+Nr. Inverter Falling Sync Pins  : 0
+***********************************************************
+SubTree No: 0
+
+Input_Pin:  (NULL)
+Output_Pin: (clock)
+Output_Net: (clock)   
+**** CK_START: TopDown Tree Construction for clock (9-leaf) (maxFan=50) (mem=217.7M)
+
+Find 0 route_obs, 0 place_obs, 0 cut_obs  1 fence channel(s), 
+ 1 channel(s).
+Trig. Edge Skew=0[63,63] N9 B2 G1 A2(1.7) L[3,3] C2/1 score=1222 cpu=0:00:00.0 mem=218M 
+
+**** CK_END: TopDown Tree Construction for clock (cpu=0:00:00.1, real=0:00:00.0, mem=217.7M)
+
+
+
+**** CK_START: Update Database (mem=217.7M)
+2 Clock Buffers/Inverters inserted.
+**** CK_END: Update Database (cpu=0:00:00.0, real=0:00:00.0, mem=217.7M)
+***** Start Refine Placement.....
+Starting refinePlace ...
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =         1.40 um
+  inst (clock__L2_I0) with max move: (44.46, 42.84) -> (44.46, 44.24)
+  mean    (X+Y) =         0.72 um
+Total instances moved : 13
+*** cpu=0:00:00.0   mem=217.7M  mem(used)=0.0M***
+***** Refine Placement Finished (CPU Time: 0:00:00.0  MEM: 217.676M)
+Resetting all latency settings from fanout cone of port 'clock'
+***** Start Refine Placement.....
+Starting refinePlace ...
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =         0.00 um
+  mean    (X+Y) =         0.00 um
+Total instances moved : 0
+*** cpu=0:00:00.0   mem=217.7M  mem(used)=0.0M***
+***** Refine Placement Finished (CPU Time: 0:00:00.0  MEM: 217.680M)
+
+**** Clock Tree clock Stat ****
+Total Clock Level	: 3
+***** Top Nodes *****
+clock delay[0(ps) 0(ps)] (  clock__L1_I0/A )
+Level 3 (Total=9	Sink=9)
+Level 2 (Total=1	Sink=0	INV_X4=1)
+Level 1 (Total=1	Sink=0	INV_X8=1)
+Total Sinks		: 9
+
+#
+# Mode                : Setup
+# Library Name        : NangateOpenCellLibrary_PDKv1_2_v2008_10
+# Operating Condition : typical
+# Process             : 1
+# Voltage             : 1.1
+# Temperature         : 25
+#
+********** Clock clock Pre-Route Timing Analysis **********
+Nr. of Subtrees                : 1
+Nr. of Sinks                   : 9
+Nr. of Buffer                  : 2
+Nr. of Level (including gates) : 2
+Root Rise Input Tran           : 120(ps)
+Root Fall Input Tran           : 120(ps)
+Max trig. edge delay at sink(R): Sum_reg_3_/CK 62.5(ps)
+Min trig. edge delay at sink(R): Sum_reg_4_/CK 62.4(ps)
+
+
+                                 (Actual)               (Required)          
+Rise Phase Delay               : 62.4~62.5(ps)          0~10000(ps)         
+Fall Phase Delay               : 77.5~77.6(ps)          0~10000(ps)         
+Trig. Edge Skew                : 0.1(ps)                300(ps)             
+Rise Skew                      : 0.1(ps)                
+Fall Skew                      : 0.1(ps)                
+Max. Rise Buffer Tran.         : 27.2(ps)               400(ps)             
+Max. Fall Buffer Tran.         : 23.4(ps)               400(ps)             
+Max. Rise Sink Tran.           : 36(ps)                 400(ps)             
+Max. Fall Sink Tran.           : 18.3(ps)               400(ps)             
+Min. Rise Buffer Tran.         : 27.2(ps)               0(ps)               
+Min. Fall Buffer Tran.         : 23.4(ps)               0(ps)               
+Min. Rise Sink Tran.           : 36(ps)                 0(ps)               
+Min. Fall Sink Tran.           : 18.3(ps)               0(ps)               
+
+
+Clock Analysis (CPU Time 0:00:00.0)
+
+
+
+**** Clock Tree clock Stat ****
+Total Clock Level	: 3
+***** Top Nodes *****
+clock delay[0(ps) 0(ps)] (  clock__L1_I0/A )
+Level 3 (Total=9	Sink=9)
+Level 2 (Total=1	Sink=0	INV_X4=1)
+Level 1 (Total=1	Sink=0	INV_X8=1)
+Total Sinks		: 9
+
+#
+# Mode                : Setup
+# Library Name        : NangateOpenCellLibrary_PDKv1_2_v2008_10
+# Operating Condition : typical
+# Process             : 1
+# Voltage             : 1.1
+# Temperature         : 25
+#
+********** Clock clock Pre-Route Timing Analysis **********
+Nr. of Subtrees                : 1
+Nr. of Sinks                   : 9
+Nr. of Buffer                  : 2
+Nr. of Level (including gates) : 2
+Root Rise Input Tran           : 120(ps)
+Root Fall Input Tran           : 120(ps)
+Max trig. edge delay at sink(R): Sum_reg_3_/CK 62.5(ps)
+Min trig. edge delay at sink(R): Sum_reg_4_/CK 62.4(ps)
+
+
+                                 (Actual)               (Required)          
+Rise Phase Delay               : 62.4~62.5(ps)          0~10000(ps)         
+Fall Phase Delay               : 77.5~77.6(ps)          0~10000(ps)         
+Trig. Edge Skew                : 0.1(ps)                300(ps)             
+Rise Skew                      : 0.1(ps)                
+Fall Skew                      : 0.1(ps)                
+Max. Rise Buffer Tran.         : 27.2(ps)               400(ps)             
+Max. Fall Buffer Tran.         : 23.4(ps)               400(ps)             
+Max. Rise Sink Tran.           : 36(ps)                 400(ps)             
+Max. Fall Sink Tran.           : 18.3(ps)               400(ps)             
+Min. Rise Buffer Tran.         : 27.2(ps)               0(ps)               
+Min. Fall Buffer Tran.         : 23.4(ps)               0(ps)               
+Min. Rise Sink Tran.           : 36(ps)                 0(ps)               
+Min. Fall Sink Tran.           : 18.3(ps)               0(ps)               
+
+
+Clock Analysis (CPU Time 0:00:00.0)
+
+
+Optimizing clock tree 'clock' ...
+
+Calculating pre-route downstream delay for clock tree 'clock'...
+*** Look For PreservePin And Optimized CrossOver Root Pin ***
+*** Look For Reconvergent Clock Component ***
+The clock tree clock has no reconvergent cell.
+resized 0 standard cell(s).
+inserted 0 standard cell(s).
+*** Non-Gated Clock Tree Optimization (cpu=0:00:00.0 mem=217.7M) ***
+
+None of the clock tree buffers/gates are modified by the skew optimization.
+
+
+*** None of the buffer chains at roots are modified by the fine-tune process.
+
+
+**** Clock Tree clock Stat ****
+Total Clock Level	: 3
+***** Top Nodes *****
+clock delay[0(ps) 0(ps)] (  clock__L1_I0/A )
+Level 3 (Total=9	Sink=9)
+Level 2 (Total=1	Sink=0	INV_X4=1)
+Level 1 (Total=1	Sink=0	INV_X8=1)
+Total Sinks		: 9
+
+#
+# Mode                : Setup
+# Library Name        : NangateOpenCellLibrary_PDKv1_2_v2008_10
+# Operating Condition : typical
+# Process             : 1
+# Voltage             : 1.1
+# Temperature         : 25
+#
+********** Clock clock Pre-Route Timing Analysis **********
+Nr. of Subtrees                : 1
+Nr. of Sinks                   : 9
+Nr. of Buffer                  : 2
+Nr. of Level (including gates) : 2
+Root Rise Input Tran           : 120(ps)
+Root Fall Input Tran           : 120(ps)
+Max trig. edge delay at sink(R): Sum_reg_3_/CK 62.5(ps)
+Min trig. edge delay at sink(R): Sum_reg_4_/CK 62.4(ps)
+
+
+                                 (Actual)               (Required)          
+Rise Phase Delay               : 62.4~62.5(ps)          0~10000(ps)         
+Fall Phase Delay               : 77.5~77.6(ps)          0~10000(ps)         
+Trig. Edge Skew                : 0.1(ps)                300(ps)             
+Rise Skew                      : 0.1(ps)                
+Fall Skew                      : 0.1(ps)                
+Max. Rise Buffer Tran.         : 27.2(ps)               400(ps)             
+Max. Fall Buffer Tran.         : 23.4(ps)               400(ps)             
+Max. Rise Sink Tran.           : 36(ps)                 400(ps)             
+Max. Fall Sink Tran.           : 18.3(ps)               400(ps)             
+Min. Rise Buffer Tran.         : 27.2(ps)               0(ps)               
+Min. Fall Buffer Tran.         : 23.4(ps)               0(ps)               
+Min. Rise Sink Tran.           : 36(ps)                 0(ps)               
+Min. Fall Sink Tran.           : 18.3(ps)               0(ps)               
+
+
+enter checking logic.
+Generating Clock Analysis Report clock.ctsrpt ....
+Generating Clock Routing Guide cts.rguide ....
+Clock Analysis (CPU Time 0:00:00.0)
+
+
+*** End ckSynthesis (cpu=0:00:00.1, real=0:00:00.0, mem=217.7M) ***
+<CMD> trialRoute -guide cts.rguide
+*** Starting trialRoute (mem=217.7M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -guide cts.rguide -noPinGuide
+
+There are 3 nets with 1 extra space.
+routingBox: (0 0) (180180 180080)
+coreBox:    (80180 80080) (100180 100080)
+**WARN: (SOCTR-3823):	The standard cell row height appears to be too small.
+Estimated standard cell row height = 0.9 metal3 tracks
+
+Phase 0 route (using Routing Guide) (0:00:00.0 217.7M):
+
+Phase 1a route (0:00:00.0 217.7M):
+Est net length = 1.155e+03um = 4.181e+02H + 7.374e+02V
+Usage: (0.6%H 0.9%V) = (5.080e+02um 8.687e+02um) = (307 562)
+Obstruct: 0 = 0 (0.0%H) + 0 (0.0%V)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1b route (0:00:00.0 217.7M):
+Usage: (0.6%H 0.9%V) = (5.080e+02um 8.687e+02um) = (307 562)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1c route (0:00:00.0 217.7M):
+Usage: (0.6%H 0.9%V) = (5.080e+02um 8.687e+02um) = (307 562)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1d route (0:00:00.0 217.7M):
+Usage: (0.6%H 0.9%V) = (5.080e+02um 8.687e+02um) = (307 562)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1e route (0:00:00.0 217.7M):
+Usage: (0.6%H 0.9%V) = (5.080e+02um 8.687e+02um) = (307 562)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Usage: (0.6%H 0.9%V) = (5.080e+02um 8.687e+02um) = (307 562)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  5:	0	 0.00%	1	 0.04%
+  6:	0	 0.00%	1	 0.04%
+  7:	0	 0.00%	4	 0.15%
+  8:	0	 0.00%	1	 0.04%
+  9:	0	 0.00%	7	 0.26%
+ 10:	0	 0.00%	50	 1.86%
+ 11:	1	 0.04%	34	 1.26%
+ 12:	0	 0.00%	90	 3.35%
+ 13:	186	 6.92%	127	 4.72%
+ 14:	546	20.31%	80	 2.98%
+ 15:	198	 7.37%	29	 1.08%
+ 16:	67	 2.49%	136	 5.06%
+ 17:	200	 7.44%	0	 0.00%
+ 18:	554	20.61%	0	 0.00%
+ 19:	244	 9.08%	0	 0.00%
+ 20:	692	25.74%	2128	79.17%
+
+
+*** Memory Usage v0.144 (Current mem = 221.688M, initial mem = 62.227M) ***
+Phase 1l route (0:00:00.0 217.7M):
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (0.7%H 0.9%V) = (5.254e+02um 8.938e+02um) = (324 576)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  3:	0	 0.00%	1	 0.04%
+  4:	0	 0.00%	1	 0.04%
+  6:	0	 0.00%	1	 0.04%
+  7:	0	 0.00%	5	 0.19%
+  8:	0	 0.00%	2	 0.07%
+  9:	1	 0.04%	4	 0.15%
+ 10:	0	 0.00%	51	 1.90%
+ 11:	0	 0.00%	37	 1.38%
+ 12:	2	 0.07%	86	 3.20%
+ 13:	188	 6.99%	125	 4.65%
+ 14:	545	20.28%	83	 3.09%
+ 15:	197	 7.33%	28	 1.04%
+ 16:	65	 2.42%	136	 5.06%
+ 17:	201	 7.48%	0	 0.00%
+ 18:	553	20.57%	0	 0.00%
+ 19:	244	 9.08%	0	 0.00%
+ 20:	692	25.74%	2128	79.17%
+
+
+
+*** Completed Phase 1 route (0:00:00.0 217.7M) ***
+
+
+Total length: 1.225e+03um, number of vias: 218
+M1(H) length: 1.140e+01um, number of vias: 112
+M2(V) length: 6.486e+02um, number of vias: 82
+M3(H) length: 4.251e+02um, number of vias: 24
+M4(V) length: 1.403e+02um, number of vias: 0
+M5(H) length: 0.000e+00um, number of vias: 0
+M6(V) length: 0.000e+00um, number of vias: 0
+M7(H) length: 0.000e+00um, number of vias: 0
+M8(V) length: 0.000e+00um, number of vias: 0
+M9(H) length: 0.000e+00um, number of vias: 0
+M10(V) length: 0.000e+00um
+*** Completed Phase 2 route (0:00:00.0 217.7M) ***
+
+*** Finished all Phases (cpu=0:00:00.0 mem=217.7M) ***
+Peak Memory Usage was 221.7M 
+*** Finished trialRoute (cpu=0:00:00.0 mem=217.7M) ***
+
+<CMD> setAnalysisMode -checkType setup -asyncChecks async -skew true -clockPropagation autoDetectClockTree
+**WARN: (SOCSYC-1870):	setAnalysisMode -clockPropagation autoDetectClockTree not supported in CTE timing mode, mapping it to setAnalysisMode -clockPropagation sdcControl
+{DETAILMESSAGE}<CMD> buildTimingGraph
+<CMD_INTERNAL> setCteReport
+<CMD> timeDesign -prePlace -reportonly -numPaths 10 -outDir Adder_timing_trialroute
+-engine default                        # enums={feDC signalStorm default}, default=default, user setting
+-signOff false                         # bool, default=false
+**WARN: (SOCOPT-3542):		 Option '-reportOnly' is ignored when used with '-preCts'.
+Set Using Default Delay Limit as 101.
+**WARN: (SOCDC-1629):	The variable rdaUseDefaultDelayLimit was set to 101. This is less than the default 1000 and may result in inaccurate results for high fanout nets. To change the variable, run command setUseDefaultDelayLimit.
+Setting High Fanout Nets ( > 100 ) as ideal temporarily for -prePlace option
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF.
+Set Input Pin Transition Delay as 1 ps.
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):|  9.220  |   N/A   |  9.220  |   N/A   |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |   N/A   |  0.000  |   N/A   |   N/A   |   N/A   |
+|    Violating Paths:|    0    |   N/A   |    0    |   N/A   |   N/A   |   N/A   |
+|          All Paths:|    9    |   N/A   |    9    |   N/A   |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
+Density: 75.549%
+------------------------------------------------------------
+Set Using Default Delay Limit as 1000.
+Resetting back High Fanout Nets as non-ideal
+Set Default Net Delay as 1000 ps.
+Set Input Pin Transition Delay as 120 ps.
+Set Default Net Load as 0.5 pF.
+Reported timing to dir Adder_timing_trialroute
+Total CPU time: 0.05 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 217.683594 Mbytes
+<CMD> defOut -floorplan -placement -cutRow -routing Adder_cts_trialroute.def
+Writing DEF file 'Adder_cts_trialroute.def', current time is Thu May 25 16:53:11 2017 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'Adder_cts_trialroute.def' is written, current time is Thu May 25 16:53:11 2017 ...
+<CMD> saveDesign ./Adder_cts_trialroute.enc
+Redoing specifyClockTree  -clkfile clock.ctstch  ...
+**WARN: (SOCSYT-3036):	Design directory ./Adder_cts_trialroute.enc.dat exists, rename it to ./Adder_cts_trialroute.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "./Adder_cts_trialroute.enc.dat/Adder.v" ...
+Calling write_sdc ... 
+Saving clock tree spec file './Adder_cts_trialroute.enc.dat/Adder.ctstch' ...
+Saving configuration ...
+Saving preference file ./Adder_cts_trialroute.enc.dat/enc.pref.tcl ...
+Saving SI fix option to './Adder_cts_trialroute.enc.dat/siFix.option'...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=217.7M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=217.7M) ***
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+Creating constraint file...
+<CMD> setExtractRCMode -assumeMetFill
+<CMD> setDesignMode -process 45
+Applying the recommended capacitance filtering threshold values for 45nm process node: total_c_th=0, relative_c_th=0.01 and coupling_c_th=0.0075.
+	These values will be used by all post-route extraction engines, including CCE and QRC.
+	For detailed extraction, the coupling_c_th value will be used only when the -capFilterMode parameter of the setExtractRCMode command is set to relAndCoup or relOrCoup.
+	The accuracy mode for detailed extraction will be set to 'high'.
+<CMD> extractRC
+Default RC Extraction called for design Adder.
+RCMode: Default, with Assume Metal Fill 1.00
+Capacitance Scaling Factor   : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Resistance Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using detail cap. scale factor for clock nets.
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 217.680M)
+<CMD> saveNetlist -excludeLeafCell Adder_routed.v
+Writing Netlist "Adder_routed.v" ...
+<CMD> rcOut -spef Adder.spef
+rcOut Option :  -spef Adder.spef 
+RC Out has the following PVT Info:
+   RC-typical , Operating temperature 25 C
+Dumping Spef file.....
+***** SPEF Out Finished (CPU Time: 0:00:00.0  MEM: 217.680M)
+<CMD> buildTimingGraph
+<CMD_INTERNAL> setCteReport
+<CMD> timeDesign -postroute -reportonly -numPaths 10 -outDir Adder_timing_extracted_trialroute
+-engine default                        # enums={feDC signalStorm default}, default=default, user setting
+-signOff false                         # bool, default=false
+**WARN: (SOCOPT-3542):		 Option '-postRoute' is ignored when used with '-reportOnly'.
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):|  9.113  |   N/A   |  9.113  |   N/A   |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |   N/A   |  0.000  |   N/A   |   N/A   |   N/A   |
+|    Violating Paths:|    0    |   N/A   |    0    |   N/A   |   N/A   |   N/A   |
+|          All Paths:|    9    |   N/A   |    9    |   N/A   |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++----------------+---------------------------+--------------+
+|                |            Real           |     Total    |
+|    DRVs        +--------------+------------+--------------|
+|                |Nr nets(terms)| Worst Vio  |Nr nets(terms)|
++----------------+--------------+------------+--------------+
+|   max_cap      |    0 (0)     |   0.000    |    0 (0)     |
+|   max_tran     |    0 (0)     |   0.000    |    0 (0)     |
+|   max_fanout   |    0 (0)     |     0      |    0 (0)     |
++----------------+--------------+------------+--------------+
+
+Density: 75.549%
+------------------------------------------------------------
+Reported timing to dir Adder_timing_extracted_trialroute
+Total CPU time: 0.03 sec
+Total Real time: 0.0 sec
+Total Memory Usage: 217.679688 Mbytes
+
+*** Memory Usage v0.144 (Current mem = 217.680M, initial mem = 62.227M) ***
+--- Ending "First Encounter" (totcpu=0:00:04.6, real=0:00:08.0, mem=217.7M) ---

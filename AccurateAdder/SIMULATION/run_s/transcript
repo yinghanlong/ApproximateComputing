@@ -1,0 +1,69 @@
+# vsim -c -novopt test 
+# //  ModelSim SE 10.0c Jul 21 2011 Linux 2.6.18-128.el5
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing /home/pxs/AccurateAdder/SIMULATION/run_s/mti_lib.test
+# Loading work.test
+# Loading work.Adder
+# Loading work.INV_X4
+# Loading work.INV_X8
+# Loading work.full_adder_0
+# Loading work.XOR2_X1
+# Loading work.AOI22_X1
+# Loading work.INV_X2
+# Loading work.full_adder_7
+# Loading work.full_adder_6
+# Loading work.full_adder_5
+# Loading work.full_adder_4
+# Loading work.full_adder_3
+# Loading work.full_adder_2
+# Loading work.full_adder_1
+# Loading work.DFF_X2
+# Loading work.AND2_X4
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# ** Error: Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by:   Hostname:   ProcessID: 1
+#           Attempting to use alternate WLF file "./wlft4R3lWX".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4R3lWX
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(315): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_0_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(315): [TFMPC] - Missing connection for port 'QN'.
+# Loading work.seq44
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(318): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_1_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(318): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(321): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_2_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(321): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(324): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_3_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(324): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(327): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_4_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(327): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(330): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_5_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(330): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(333): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_6_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(333): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(336): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_7_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(336): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(339): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_8_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(339): [TFMPC] - Missing connection for port 'QN'.
+#  
+# ** Note: $finish    : test.v(60)
+#    Time: 80 ns  Iteration: 0  Instance: /test

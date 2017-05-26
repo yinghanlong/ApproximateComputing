@@ -1,0 +1,8 @@
+## 
+## Cadence First Encounter "v08.10-p004_1 ((32bit) 11/04/2008 14:34 (Linux 2.6))"
+## Tue May 23 22:25:25 2017
+## 
+set sdc_version 1.4
+current_design counter
+create_clock [get_ports {clock}]  -name clock -period 10 -waveform {0 5}
+set_propagated_clock  [get_ports {clock}]

@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Adder
+Version: B-2008.09
+Date   : Fri May 26 17:03:33 2017
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10
+Wire Load Model Mode: top
+
+  Startpoint: Y[4] (input port clocked by clock)
+  Endpoint: Sum_reg_8_ (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   0.6580     0.6580 f
+  Y[4] (in)                              0.0208     0.6788 f
+  a4/B (full_adder_0)                    0.0000     0.6788 f
+  a4/U4/Z (XOR2_X1)                      0.1147     0.7935 f
+  a4/U3/ZN (AOI22_X1)                    0.1083     0.9018 r
+  a4/U1/ZN (INV_X2)                      0.0198     0.9216 f
+  a4/Cout (full_adder_0)                 0.0000     0.9216 f
+  a5/Cin (full_adder_3)                  0.0000     0.9216 f
+  a5/U3/ZN (AOI22_X1)                    0.1200     1.0416 r
+  a5/U1/ZN (INV_X2)                      0.0198     1.0614 f
+  a5/Cout (full_adder_3)                 0.0000     1.0614 f
+  a6/Cin (full_adder_2)                  0.0000     1.0614 f
+  a6/U3/ZN (AOI22_X1)                    0.1200     1.1814 r
+  a6/U1/ZN (INV_X2)                      0.0198     1.2012 f
+  a6/Cout (full_adder_2)                 0.0000     1.2012 f
+  a7/Cin (full_adder_1)                  0.0000     1.2012 f
+  a7/U3/ZN (AOI22_X1)                    0.1200     1.3211 r
+  a7/U1/ZN (INV_X2)                      0.0147     1.3358 f
+  a7/Cout (full_adder_1)                 0.0000     1.3358 f
+  Sum_reg_8_/D (DFF_X2)                  0.0000     1.3358 f
+  data arrival time                                 1.3358
+
+  clock clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.0500     9.9500
+  Sum_reg_8_/CK (DFF_X2)                 0.0000     9.9500 r
+  library setup time                    -0.0667     9.8833
+  data required time                                9.8833
+  -----------------------------------------------------------
+  data required time                                9.8833
+  data arrival time                                -1.3358
+  -----------------------------------------------------------
+  slack (MET)                                       8.5475
+
+
+1

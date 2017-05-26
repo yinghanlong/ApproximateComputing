@@ -1,0 +1,51 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : counter
+Version: B-2008.09
+Date   : Thu May 25 17:03:27 2017
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10
+Wire Load Model Mode: top
+
+  Startpoint: latch (input port clocked by clock)
+  Endpoint: value_reg_3_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   0.6580     0.6580 r
+  latch (in)                             0.2538     0.9118 r
+  U16/ZN (NOR3_X2)                       0.0943     1.0060 f
+  U15/ZN (NOR2_X2)                       0.0878     1.0938 r
+  U23/ZN (AOI21_X2)                      0.0521     1.1459 f
+  U24/ZN (OAI21_X2)                      0.0840     1.2299 r
+  U26/ZN (AOI21_X2)                      0.0473     1.2772 f
+  U25/ZN (OAI21_X2)                      0.0620     1.3392 r
+  value_reg_3_/D (DFF_X1)                0.0000     1.3392 r
+  data arrival time                                 1.3392
+
+  clock clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.0500     9.9500
+  value_reg_3_/CK (DFF_X1)               0.0000     9.9500 r
+  library setup time                    -0.0674     9.8826
+  data required time                                9.8826
+  -----------------------------------------------------------
+  data required time                                9.8826
+  data arrival time                                -1.3392
+  -----------------------------------------------------------
+  slack (MET)                                       8.5434
+
+
+1

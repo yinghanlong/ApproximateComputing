@@ -1,0 +1,468 @@
+#
+# created by First Encounter v08.10-p004_1 on Wed May 24 17:05:32 2017
+#
+VERSION 5.7 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN Adder ;
+UNITS DISTANCE MICRONS 2000 ;
+
+PROPERTYDEFINITIONS
+    COMPONENTPIN designRuleWidth REAL ;
+    DESIGN FE_CORE_BOX_LL_X REAL 40.090 ;
+    DESIGN FE_CORE_BOX_UR_X REAL 50.090 ;
+    DESIGN FE_CORE_BOX_LL_Y REAL 40.040 ;
+    DESIGN FE_CORE_BOX_UR_Y REAL 50.040 ;
+END PROPERTYDEFINITIONS
+
+DIEAREA ( 0 0 ) ( 180180 180080 ) ;
+
+ROW CORE_ROW_0 NCSU_FreePDK_45nm 80180 80080 FS DO 52 BY 1 STEP 380 0 ;
+ROW CORE_ROW_1 NCSU_FreePDK_45nm 80180 82880 N DO 52 BY 1 STEP 380 0 ;
+ROW CORE_ROW_2 NCSU_FreePDK_45nm 80180 85680 FS DO 52 BY 1 STEP 380 0 ;
+ROW CORE_ROW_3 NCSU_FreePDK_45nm 80180 88480 N DO 52 BY 1 STEP 380 0 ;
+ROW CORE_ROW_4 NCSU_FreePDK_45nm 80180 91280 FS DO 52 BY 1 STEP 380 0 ;
+ROW CORE_ROW_5 NCSU_FreePDK_45nm 80180 94080 N DO 52 BY 1 STEP 380 0 ;
+ROW CORE_ROW_6 NCSU_FreePDK_45nm 80180 96880 FS DO 52 BY 1 STEP 380 0 ;
+
+TRACKS Y 3420 DO 56 STEP 3200 LAYER metal10 ;
+TRACKS X 3090 DO 53 STEP 3360 LAYER metal10 ;
+TRACKS X 1410 DO 107 STEP 1680 LAYER metal9 ;
+TRACKS Y 3420 DO 56 STEP 3200 LAYER metal9 ;
+TRACKS Y 1260 DO 107 STEP 1680 LAYER metal8 ;
+TRACKS X 1410 DO 107 STEP 1680 LAYER metal8 ;
+TRACKS X 290 DO 322 STEP 560 LAYER metal7 ;
+TRACKS Y 1260 DO 107 STEP 1680 LAYER metal7 ;
+TRACKS Y 700 DO 321 STEP 560 LAYER metal6 ;
+TRACKS X 290 DO 322 STEP 560 LAYER metal6 ;
+TRACKS X 290 DO 322 STEP 560 LAYER metal5 ;
+TRACKS Y 700 DO 321 STEP 560 LAYER metal5 ;
+TRACKS Y 140 DO 643 STEP 280 LAYER metal4 ;
+TRACKS X 290 DO 322 STEP 560 LAYER metal4 ;
+TRACKS X 190 DO 474 STEP 380 LAYER metal3 ;
+TRACKS Y 140 DO 643 STEP 280 LAYER metal3 ;
+TRACKS Y 140 DO 643 STEP 280 LAYER metal2 ;
+TRACKS X 190 DO 474 STEP 380 LAYER metal2 ;
+TRACKS X 190 DO 474 STEP 380 LAYER metal1 ;
+TRACKS Y 140 DO 643 STEP 280 LAYER metal1 ;
+
+GCELLGRID X 178790 DO 2 STEP 1390 ;
+GCELLGRID X 190 DO 48 STEP 3800 ;
+GCELLGRID X 0 DO 2 STEP 190 ;
+GCELLGRID Y 179340 DO 2 STEP 740 ;
+GCELLGRID Y 140 DO 65 STEP 2800 ;
+GCELLGRID Y 0 DO 2 STEP 140 ;
+
+VIAS 1 ;
+- Via5Array-0_1
+ + VIARULE Via5Array-0
+ + CUTSIZE 280 280
+ + LAYERS metal5 via5 metal6
+ + CUTSPACING 320 320
+ + ENCLOSURE 260 260 260 260
+ + ROWCOL 33 33
+ ;
+END VIAS
+
+COMPONENTS 44 ;
+- clock__L2_I0 INV_X4 + SOURCE TIMING + FIXED ( 91200 88480 ) N + WEIGHT 1
+ ;
+- clock__L1_I0 INV_X8 + SOURCE TIMING + FIXED ( 98800 88480 ) N + WEIGHT 1
+ ;
+- a0/U2 XOR2_X1 + PLACED ( 87780 94080 ) N
+ ;
+- a0/U3 AOI22_X1 + PLACED ( 89680 91280 ) FS
+ ;
+- a0/U4 XOR2_X1 + PLACED ( 92340 91280 ) FS
+ ;
+- a0/U1 INV_X2 + PLACED ( 88920 91280 ) FS
+ ;
+- a1/U2 XOR2_X1 + PLACED ( 82460 88480 ) N
+ ;
+- a1/U3 AOI22_X1 + PLACED ( 80180 91280 ) S
+ ;
+- a1/U4 XOR2_X1 + PLACED ( 80180 88480 ) N
+ ;
+- a1/U1 INV_X2 + PLACED ( 87020 85680 ) FS
+ ;
+- a2/U2 XOR2_X1 + PLACED ( 87780 85680 ) S
+ ;
+- a2/U3 AOI22_X1 + PLACED ( 90060 82880 ) N
+ ;
+- a2/U4 XOR2_X1 + PLACED ( 90060 85680 ) FS
+ ;
+- a2/U1 INV_X2 + PLACED ( 85880 80080 ) FS
+ ;
+- a3/U2 XOR2_X1 + PLACED ( 80180 82880 ) FN
+ ;
+- a3/U3 AOI22_X1 + PLACED ( 81700 80080 ) FS
+ ;
+- a3/U4 XOR2_X1 + PLACED ( 83600 80080 ) S
+ ;
+- a3/U1 INV_X2 + PLACED ( 82460 82880 ) N
+ ;
+- a4/U2 XOR2_X1 + PLACED ( 90820 80080 ) FS
+ ;
+- a4/U3 AOI22_X1 + PLACED ( 88920 80080 ) S
+ ;
+- a4/U4 XOR2_X1 + PLACED ( 86640 80080 ) S
+ ;
+- a4/U1 INV_X2 + PLACED ( 92340 82880 ) N
+ ;
+- a5/U2 XOR2_X1 + PLACED ( 97280 85680 ) FS
+ ;
+- a5/U3 AOI22_X1 + PLACED ( 93100 85680 ) S
+ ;
+- a5/U4 XOR2_X1 + PLACED ( 95000 85680 ) FS
+ ;
+- a5/U1 INV_X2 + PLACED ( 92340 85680 ) FS
+ ;
+- a6/U2 XOR2_X1 + PLACED ( 88920 88480 ) N
+ ;
+- a6/U3 AOI22_X1 + PLACED ( 87020 88480 ) FN
+ ;
+- a6/U4 XOR2_X1 + PLACED ( 84740 88480 ) FN
+ ;
+- a6/U1 INV_X2 + PLACED ( 91580 91280 ) S
+ ;
+- a7/U2 XOR2_X1 + PLACED ( 90060 94080 ) N
+ ;
+- a7/U3 AOI22_X1 + PLACED ( 90820 96880 ) FS
+ ;
+- a7/U4 XOR2_X1 + PLACED ( 87020 96880 ) S
+ ;
+- a7/U1 INV_X2 + PLACED ( 92340 94080 ) N
+ ;
+- Sum_reg_0_ DFF_X2 + FIXED ( 80180 94080 ) FN + WEIGHT 1
+ ;
+- Sum_reg_1_ DFF_X2 + FIXED ( 82080 91280 ) S + WEIGHT 1
+ ;
+- Sum_reg_2_ DFF_X2 + FIXED ( 80180 85680 ) S + WEIGHT 1
+ ;
+- Sum_reg_3_ DFF_X2 + FIXED ( 83220 82880 ) FN + WEIGHT 1
+ ;
+- Sum_reg_4_ DFF_X2 + FIXED ( 93100 80080 ) S + WEIGHT 1
+ ;
+- Sum_reg_5_ DFF_X2 + FIXED ( 93100 82880 ) FN + WEIGHT 1
+ ;
+- Sum_reg_6_ DFF_X2 + FIXED ( 91960 88480 ) N + WEIGHT 1
+ ;
+- Sum_reg_7_ DFF_X2 + FIXED ( 92720 96880 ) S + WEIGHT 1
+ ;
+- Sum_reg_8_ DFF_X2 + FIXED ( 93100 94080 ) FN + WEIGHT 1
+ ;
+- U3 AND2_X4 + PLACED ( 80180 80080 ) S
+ ;
+END COMPONENTS
+
+PINS 27 ;
+- Sum[8] + NET Sum[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 93670 180080 ) S ;
+- Sum[7] + NET Sum[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal4 ( -140 0 ) ( 140 280 )
+  + PLACED ( 93250 180080 ) S ;
+- Sum[6] + NET Sum[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 180180 89180 ) W ;
+- Sum[5] + NET Sum[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 93670 0 ) N ;
+- Sum[4] + NET Sum[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal4 ( -140 0 ) ( 140 280 )
+  + PLACED ( 93810 0 ) N ;
+- Sum[3] + NET Sum[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 83790 0 ) N ;
+- Sum[2] + NET Sum[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 0 87780 ) E ;
+- Sum[1] + NET Sum[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 0 93380 ) E ;
+- Sum[0] + NET Sum[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 0 94780 ) E ;
+- clock + NET clock + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 180180 90020 ) W ;
+- X[7] + NET X[7] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 90630 180080 ) S ;
+- X[6] + NET X[6] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 89110 0 ) N ;
+- X[5] + NET X[5] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 94430 0 ) N ;
+- X[4] + NET X[4] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal4 ( -140 0 ) ( 140 280 )
+  + PLACED ( 88770 0 ) N ;
+- X[3] + NET X[3] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 84550 0 ) N ;
+- X[2] + NET X[2] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 91010 0 ) N ;
+- X[1] + NET X[1] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 0 89740 ) E ;
+- X[0] + NET X[0] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 89870 180080 ) S ;
+- Y[7] + NET Y[7] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal4 ( -140 0 ) ( 140 280 )
+  + PLACED ( 90450 180080 ) S ;
+- Y[6] + NET Y[6] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal6 ( -140 0 ) ( 140 280 )
+  + PLACED ( 88770 0 ) N ;
+- Y[5] + NET Y[5] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 95190 0 ) N ;
+- Y[4] + NET Y[4] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal8 ( -400 0 ) ( 400 800 )
+  + PLACED ( 88770 0 ) N ;
+- Y[3] + NET Y[3] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal4 ( -140 0 ) ( 140 280 )
+  + PLACED ( 84290 0 ) N ;
+- Y[2] + NET Y[2] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal4 ( -140 0 ) ( 140 280 )
+  + PLACED ( 91010 0 ) N ;
+- Y[1] + NET Y[1] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 0 89180 ) E ;
+- Y[0] + NET Y[0] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal6 ( -140 0 ) ( 140 280 )
+  + PLACED ( 89890 180080 ) S ;
+- Cin + NET Cin + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 87970 180080 ) S ;
+END PINS
+
+SPECIALNETS 2 ;
+- VSS  ( * VSS )
+  + ROUTED metal5 20000 + SHAPE RING ( 50090 60040 ) ( 130060 * )
+    NEW metal6 20000 + SHAPE RING ( 60090 50040 ) ( * 129880 )
+    NEW metal6 20000 + SHAPE RING ( 120060 50040 ) ( * 129880 )
+    NEW metal5 20000 + SHAPE RING ( 50090 119880 ) ( 130060 * )
+    NEW metal6 0 + SHAPE RING ( 60090 60040 ) Via5Array-0_1
+    NEW metal6 0 + SHAPE RING ( 120060 60040 ) Via5Array-0_1
+    NEW metal6 0 + SHAPE RING ( 60090 119880 ) Via5Array-0_1
+    NEW metal6 0 + SHAPE RING ( 120060 119880 ) Via5Array-0_1
+  + USE GROUND
+ ;
+- VDD  ( * VDD )
+  + ROUTED metal5 20000 + SHAPE RING ( 10090 20040 ) ( 170060 * )
+    NEW metal6 20000 + SHAPE RING ( 20090 10040 ) ( * 169880 )
+    NEW metal6 20000 + SHAPE RING ( 160060 10040 ) ( * 169880 )
+    NEW metal5 20000 + SHAPE RING ( 10090 159880 ) ( 170060 * )
+    NEW metal6 0 + SHAPE RING ( 20090 20040 ) Via5Array-0_1
+    NEW metal6 0 + SHAPE RING ( 160060 20040 ) Via5Array-0_1
+    NEW metal6 0 + SHAPE RING ( 20090 159880 ) Via5Array-0_1
+    NEW metal6 0 + SHAPE RING ( 160060 159880 ) Via5Array-0_1
+  + USE POWER
+ ;
+END SPECIALNETS
+
+NETS 63 ;
+- clock__L2_N0
+  ( Sum_reg_8_ CK ) ( Sum_reg_7_ CK ) ( Sum_reg_6_ CK ) ( Sum_reg_5_ CK )
+  ( Sum_reg_4_ CK ) ( Sum_reg_3_ CK ) ( Sum_reg_2_ CK ) ( Sum_reg_1_ CK )
+  ( Sum_reg_0_ CK ) ( clock__L2_I0 ZN )
+  + USE CLOCK
+  + WEIGHT 20
+ ;
+- clock__L1_N0
+  ( clock__L1_I0 ZN ) ( clock__L2_I0 A )
+  + USE CLOCK
+  + WEIGHT 20
+ ;
+- Sum[8]
+  ( PIN Sum[8] ) ( Sum_reg_8_ Q )
+ ;
+- Sum[7]
+  ( PIN Sum[7] ) ( Sum_reg_7_ Q )
+ ;
+- Sum[6]
+  ( PIN Sum[6] ) ( Sum_reg_6_ Q )
+ ;
+- Sum[5]
+  ( PIN Sum[5] ) ( Sum_reg_5_ Q )
+ ;
+- Sum[4]
+  ( PIN Sum[4] ) ( Sum_reg_4_ Q )
+ ;
+- Sum[3]
+  ( PIN Sum[3] ) ( Sum_reg_3_ Q )
+ ;
+- Sum[2]
+  ( PIN Sum[2] ) ( Sum_reg_2_ Q )
+ ;
+- Sum[1]
+  ( PIN Sum[1] ) ( Sum_reg_1_ Q )
+ ;
+- Sum[0]
+  ( PIN Sum[0] ) ( Sum_reg_0_ Q )
+ ;
+- X[7]
+  ( PIN X[7] ) ( a7/U4 A ) ( a7/U3 A2 )
+ ;
+- X[6]
+  ( PIN X[6] ) ( a6/U4 A ) ( a6/U3 A2 )
+ ;
+- X[5]
+  ( PIN X[5] ) ( a5/U4 A ) ( a5/U3 A2 )
+ ;
+- X[4]
+  ( PIN X[4] ) ( a4/U4 A ) ( a4/U3 A2 )
+ ;
+- X[3]
+  ( PIN X[3] ) ( a3/U4 A ) ( a3/U3 A2 )
+ ;
+- X[2]
+  ( PIN X[2] ) ( a2/U4 A ) ( a2/U3 A2 )
+ ;
+- X[1]
+  ( PIN X[1] ) ( a1/U4 A ) ( a1/U3 A2 )
+ ;
+- X[0]
+  ( PIN X[0] ) ( a0/U4 A ) ( a0/U3 A2 )
+ ;
+- Y[7]
+  ( PIN Y[7] ) ( a7/U4 B ) ( a7/U3 A1 )
+ ;
+- Y[6]
+  ( PIN Y[6] ) ( a6/U4 B ) ( a6/U3 A1 )
+ ;
+- Y[5]
+  ( PIN Y[5] ) ( a5/U4 B ) ( a5/U3 A1 )
+ ;
+- Y[4]
+  ( PIN Y[4] ) ( a4/U4 B ) ( a4/U3 A1 )
+ ;
+- Y[3]
+  ( PIN Y[3] ) ( a3/U4 B ) ( a3/U3 A1 )
+ ;
+- Y[2]
+  ( PIN Y[2] ) ( a2/U4 B ) ( a2/U3 A1 )
+ ;
+- Y[1]
+  ( PIN Y[1] ) ( a1/U4 B ) ( a1/U3 A1 )
+ ;
+- Y[0]
+  ( PIN Y[0] ) ( a0/U4 B ) ( a0/U3 A1 )
+ ;
+- clock
+  ( PIN clock ) ( clock__L1_I0 A )
+  + USE CLOCK
+  + WEIGHT 20
+ ;
+- Cin
+  ( PIN Cin ) ( a0/U3 B2 ) ( a0/U2 A )
+ ;
+- n19
+  ( U3 A2 ) ( a3/U2 Z )
+ ;
+- n20
+  ( U3 A1 ) ( a3/U1 ZN )
+ ;
+- S[8]
+  ( Sum_reg_8_ D ) ( a7/U1 ZN )
+ ;
+- S[7]
+  ( Sum_reg_7_ D ) ( a7/U2 Z )
+ ;
+- S[6]
+  ( Sum_reg_6_ D ) ( a6/U2 Z )
+ ;
+- S[5]
+  ( Sum_reg_5_ D ) ( a5/U2 Z )
+ ;
+- S[4]
+  ( Sum_reg_4_ D ) ( a4/U2 Z )
+ ;
+- S[3]
+  ( U3 ZN ) ( Sum_reg_3_ D )
+ ;
+- S[2]
+  ( Sum_reg_2_ D ) ( a2/U2 Z )
+ ;
+- S[1]
+  ( Sum_reg_1_ D ) ( a1/U2 Z )
+ ;
+- S[0]
+  ( Sum_reg_0_ D ) ( a0/U2 Z )
+ ;
+- C[6]
+  ( a7/U3 B2 ) ( a7/U2 A ) ( a6/U1 ZN )
+ ;
+- C[5]
+  ( a6/U3 B2 ) ( a6/U2 A ) ( a5/U1 ZN )
+ ;
+- C[4]
+  ( a5/U3 B2 ) ( a5/U2 A ) ( a4/U1 ZN )
+ ;
+- C[2]
+  ( a3/U3 B2 ) ( a3/U2 A ) ( a2/U1 ZN )
+ ;
+- C[1]
+  ( a2/U3 B2 ) ( a2/U2 A ) ( a1/U1 ZN )
+ ;
+- C[0]
+  ( a1/U3 B2 ) ( a1/U2 A ) ( a0/U1 ZN )
+ ;
+- a0/n2
+  ( a0/U4 Z ) ( a0/U3 B1 ) ( a0/U2 B )
+ ;
+- a0/n3
+  ( a0/U1 A ) ( a0/U3 ZN )
+ ;
+- a1/n1
+  ( a1/U1 A ) ( a1/U3 ZN )
+ ;
+- a1/n3
+  ( a1/U4 Z ) ( a1/U3 B1 ) ( a1/U2 B )
+ ;
+- a2/n1
+  ( a2/U1 A ) ( a2/U3 ZN )
+ ;
+- a2/n3
+  ( a2/U4 Z ) ( a2/U3 B1 ) ( a2/U2 B )
+ ;
+- a3/n1
+  ( a3/U1 A ) ( a3/U3 ZN )
+ ;
+- a3/n3
+  ( a3/U4 Z ) ( a3/U3 B1 ) ( a3/U2 B )
+ ;
+- a4/n1
+  ( a4/U1 A ) ( a4/U3 ZN )
+ ;
+- a4/n3
+  ( a4/U4 Z ) ( a4/U3 B1 ) ( a4/U2 B )
+ ;
+- a5/n1
+  ( a5/U1 A ) ( a5/U3 ZN )
+ ;
+- a5/n3
+  ( a5/U4 Z ) ( a5/U3 B1 ) ( a5/U2 B )
+ ;
+- a6/n1
+  ( a6/U1 A ) ( a6/U3 ZN )
+ ;
+- a6/n3
+  ( a6/U4 Z ) ( a6/U3 B1 ) ( a6/U2 B )
+ ;
+- a7/n1
+  ( a7/U1 A ) ( a7/U3 ZN )
+ ;
+- a7/n3
+  ( a7/U4 Z ) ( a7/U3 B1 ) ( a7/U2 B )
+ ;
+- VSS
+  ( a4/U2 A ) ( a4/U3 B2 )
+  + USE GROUND
+ ;
+END NETS
+
+END DESIGN

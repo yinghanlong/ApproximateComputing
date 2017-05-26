@@ -1,0 +1,5 @@
+#/**************************************************
+# * Timing constraint file in PT format
+# **************************************************/
+create_clock -name clock -period 10.0000000 -waveform { 0.0000000 5.0000000}\
+   [get_ports {clock}] 

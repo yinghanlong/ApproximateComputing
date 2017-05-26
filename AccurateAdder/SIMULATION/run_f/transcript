@@ -1,0 +1,35 @@
+# vsim -c -novopt test_fixture 
+# //  ModelSim SE 10.0c Jul 21 2011 Linux 2.6.18-128.el5
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing /home/pxs/Desktop/Meng/tutorials/lab2Test/SIMULATION/run_f/mti_lib.test_fixture
+# Loading work.test_fixture
+# Refreshing /home/pxs/Desktop/Meng/tutorials/lab2Test/SIMULATION/run_f/mti_lib.counter
+# Loading work.counter
+# Loading work.INV_X4
+# Loading work.INV_X8
+# Loading work.DFF_X1
+# Loading work.NOR2_X2
+# Loading work.NAND2_X2
+# Loading work.AOI221_X2
+# Loading work.NOR3_X2
+# Loading work.NOR4_X2
+# Loading work.AOI21_X2
+# Loading work.OAI21_X2
+# Loading work.AOI22_X2
+# ** Warning: (vsim-3015) test.v(29): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'in'. The port definition is at: ../../PR/run_f/counter_routed.v(3).
+#         Region: /test_fixture/DUT
+# ** Warning: (vsim-3017) ../../PR/run_f/counter_routed.v(48): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test_fixture/DUT/value_reg_0_
+# ** Warning: (vsim-3722) ../../PR/run_f/counter_routed.v(48): [TFMPC] - Missing connection for port 'QN'.
+# Loading work.seq43
+# ** Warning: (vsim-3017) ../../PR/run_f/counter_routed.v(55): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test_fixture/DUT/value_reg_2_
+# ** Warning: (vsim-3722) ../../PR/run_f/counter_routed.v(55): [TFMPC] - Missing connection for port 'QN'.
+#  

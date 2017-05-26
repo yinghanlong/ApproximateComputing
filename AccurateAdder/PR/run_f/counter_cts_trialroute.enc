@@ -1,0 +1,8 @@
+################################################
+#                                              #
+# Silicon Perspective, A Cadence Company       #
+# FirstEncounter Design Restore script         #
+#    for design session: ./counter_cts_trialroute.enc                     
+#                                              #
+################################################
+restoreDesign ./counter_cts_trialroute.enc.dat counter

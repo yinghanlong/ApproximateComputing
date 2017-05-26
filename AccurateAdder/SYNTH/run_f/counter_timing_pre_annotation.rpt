@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : counter
+Version: B-2008.09
+Date   : Wed May 24 17:26:30 2017
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10
+Wire Load Model Mode: top
+
+  Startpoint: latch (input port clocked by clock)
+  Endpoint: value_reg_3_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   0.6580     0.6580 f
+  latch (in)                             0.0567     0.7147 f
+  U16/ZN (NOR3_X2)                       0.1048     0.8195 r
+  U15/ZN (NOR2_X2)                       0.0370     0.8565 f
+  U23/ZN (AOI21_X2)                      0.0882     0.9447 r
+  U24/ZN (OAI21_X2)                      0.0507     0.9954 f
+  U26/ZN (AOI21_X2)                      0.0826     1.0780 r
+  U25/ZN (OAI21_X2)                      0.0309     1.1089 f
+  value_reg_3_/D (DFF_X1)                0.0000     1.1089 f
+  data arrival time                                 1.1089
+
+  clock clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.0500     9.9500
+  value_reg_3_/CK (DFF_X1)               0.0000     9.9500 r
+  library setup time                    -0.0635     9.8865
+  data required time                                9.8865
+  -----------------------------------------------------------
+  data required time                                9.8865
+  data arrival time                                -1.1089
+  -----------------------------------------------------------
+  slack (MET)                                       8.7775
+
+
+1

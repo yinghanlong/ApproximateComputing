@@ -1,0 +1,10 @@
+# Format: clock  timeReq  slackR/slackF  setupR/setupF  instName/pinName   # cycle(s)
+@(R)->clock(R)	9.935    */9.177         */0.065         Sum_reg_3_/D    1
+@(R)->clock(R)	9.933    */9.369         */0.067         Sum_reg_8_/D    1
+@(R)->clock(R)	9.928    */9.420         */0.072         Sum_reg_7_/D    1
+@(R)->clock(R)	9.929    */9.430         */0.071         Sum_reg_2_/D    1
+@(R)->clock(R)	9.929    9.561/*         0.071/*         Sum_reg_1_/D    1
+@(R)->clock(R)	9.929    9.569/*         0.071/*         Sum_reg_6_/D    1
+@(R)->clock(R)	9.929    9.663/*         0.071/*         Sum_reg_0_/D    1
+@(R)->clock(R)	9.931    9.668/*         0.069/*         Sum_reg_4_/D    1
+@(R)->clock(R)	9.929    9.668/*         0.071/*         Sum_reg_5_/D    1

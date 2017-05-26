@@ -1,0 +1,39 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Fri Nov 11 22:44:09 2016                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: First Encounter v08.10-p004_1 (32bit) 11/04/2008 14:34 (Linux 2.6)
+#@(#)CDS: NanoRoute v08.10-p008 NR081027-0018/USR58-UB (database version 2.30, 67.1.1) {superthreading v1.11}
+#@(#)CDS: CeltIC v08.10-p002_1 (32bit) 10/23/2008 22:04:14 (Linux 2.6.9-67.0.10.ELsmp)
+#@(#)CDS: CTE v08.10-p016_1 (32bit) Oct 26 2008 15:11:51 (Linux 2.6.9-67.0.10.ELsmp)
+#@(#)CDS: CPE v08.10-p009
+
+loadConfig design.conf
+restoreDesign . counter_cts_trialroute.enc.dat/counter
+fit
+panCenter 43.327 45.529
+windowSelect 44.154 44.256 51.666 37.254
+deselectAll
+windowSelect 45.937 42.474 49.756 40.946
+clearDrc
+zoomOut
+zoomOut
+deselectAll
+selectWire 45.6600 43.2950 46.3000 43.3650 3 zero
+deselectAll
+windowSelect 45.480 40.073 47.236 38.797
+windowSelect 45.704 38.956 44.236 38.797
+fit
+zoomIn
+zoomIn
+zoomIn
+zoomIn
+zoomOut
+zoomOut
+zoomIn
+zoomOut
+zoomIn
+zoomIn

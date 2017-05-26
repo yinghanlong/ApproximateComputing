@@ -1,0 +1,289 @@
+#
+# created by First Encounter v08.10-p004_1 on Tue May 23 22:25:25 2017
+#
+VERSION 5.7 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN counter ;
+UNITS DISTANCE MICRONS 2000 ;
+
+PROPERTYDEFINITIONS
+    COMPONENTPIN designRuleWidth REAL ;
+    DESIGN FE_CORE_BOX_LL_X REAL 40.090 ;
+    DESIGN FE_CORE_BOX_UR_X REAL 50.090 ;
+    DESIGN FE_CORE_BOX_LL_Y REAL 40.040 ;
+    DESIGN FE_CORE_BOX_UR_Y REAL 50.040 ;
+END PROPERTYDEFINITIONS
+
+DIEAREA ( 0 0 ) ( 180180 180080 ) ;
+
+ROW CORE_ROW_0 NCSU_FreePDK_45nm 80180 80080 FS DO 52 BY 1 STEP 380 0 ;
+ROW CORE_ROW_1 NCSU_FreePDK_45nm 80180 82880 N DO 52 BY 1 STEP 380 0 ;
+ROW CORE_ROW_2 NCSU_FreePDK_45nm 80180 85680 FS DO 52 BY 1 STEP 380 0 ;
+ROW CORE_ROW_3 NCSU_FreePDK_45nm 80180 88480 N DO 52 BY 1 STEP 380 0 ;
+ROW CORE_ROW_4 NCSU_FreePDK_45nm 80180 91280 FS DO 52 BY 1 STEP 380 0 ;
+ROW CORE_ROW_5 NCSU_FreePDK_45nm 80180 94080 N DO 52 BY 1 STEP 380 0 ;
+ROW CORE_ROW_6 NCSU_FreePDK_45nm 80180 96880 FS DO 52 BY 1 STEP 380 0 ;
+
+TRACKS Y 3420 DO 56 STEP 3200 LAYER metal10 ;
+TRACKS X 3090 DO 53 STEP 3360 LAYER metal10 ;
+TRACKS X 1410 DO 107 STEP 1680 LAYER metal9 ;
+TRACKS Y 3420 DO 56 STEP 3200 LAYER metal9 ;
+TRACKS Y 1260 DO 107 STEP 1680 LAYER metal8 ;
+TRACKS X 1410 DO 107 STEP 1680 LAYER metal8 ;
+TRACKS X 290 DO 322 STEP 560 LAYER metal7 ;
+TRACKS Y 1260 DO 107 STEP 1680 LAYER metal7 ;
+TRACKS Y 700 DO 321 STEP 560 LAYER metal6 ;
+TRACKS X 290 DO 322 STEP 560 LAYER metal6 ;
+TRACKS X 290 DO 322 STEP 560 LAYER metal5 ;
+TRACKS Y 700 DO 321 STEP 560 LAYER metal5 ;
+TRACKS Y 140 DO 643 STEP 280 LAYER metal4 ;
+TRACKS X 290 DO 322 STEP 560 LAYER metal4 ;
+TRACKS X 190 DO 474 STEP 380 LAYER metal3 ;
+TRACKS Y 140 DO 643 STEP 280 LAYER metal3 ;
+TRACKS Y 140 DO 643 STEP 280 LAYER metal2 ;
+TRACKS X 190 DO 474 STEP 380 LAYER metal2 ;
+TRACKS X 190 DO 474 STEP 380 LAYER metal1 ;
+TRACKS Y 140 DO 643 STEP 280 LAYER metal1 ;
+
+GCELLGRID X 178790 DO 2 STEP 1390 ;
+GCELLGRID X 190 DO 48 STEP 3800 ;
+GCELLGRID X 0 DO 2 STEP 190 ;
+GCELLGRID Y 179340 DO 2 STEP 740 ;
+GCELLGRID Y 140 DO 65 STEP 2800 ;
+GCELLGRID Y 0 DO 2 STEP 140 ;
+
+VIAS 1 ;
+- Via5Array-0_1
+ + VIARULE Via5Array-0
+ + CUTSIZE 280 280
+ + LAYERS metal5 via5 metal6
+ + CUTSPACING 320 320
+ + ENCLOSURE 260 260 260 260
+ + ROWCOL 33 33
+ ;
+END VIAS
+
+COMPONENTS 26 ;
+- clock__L2_I0 INV_X4 + SOURCE TIMING + FIXED ( 89680 88480 ) N + WEIGHT 1
+ ;
+- clock__L1_I0 INV_X8 + SOURCE TIMING + FIXED ( 98800 91280 ) FS + WEIGHT 1
+ ;
+- value_reg_0_ DFF_X1 + FIXED ( 92720 88480 ) FN + WEIGHT 1
+ ;
+- value_reg_1_ DFF_X1 + FIXED ( 80560 85680 ) FS + WEIGHT 1
+ ;
+- value_reg_2_ DFF_X1 + FIXED ( 80560 94080 ) N + WEIGHT 1
+ ;
+- value_reg_3_ DFF_X1 + FIXED ( 93100 94080 ) FN + WEIGHT 1
+ ;
+- U7 NOR2_X2 + PLACED ( 87020 88480 ) N
+ ;
+- U9 NAND2_X2 + PLACED ( 93100 91280 ) FS
+ ;
+- U13 AOI221_X2 + PLACED ( 90820 82880 ) N
+ ;
+- U14 NOR2_X2 + PLACED ( 90440 80080 ) S
+ ;
+- U15 NOR2_X2 + PLACED ( 95760 80080 ) S
+ ;
+- U16 NOR3_X2 + PLACED ( 91580 85680 ) FS
+ ;
+- U17 NOR4_X2 + PLACED ( 90440 88480 ) FN
+ ;
+- U18 INV_X4 + PLACED ( 97280 85680 ) FS
+ ;
+- U19 INV_X4 + PLACED ( 88540 94080 ) N
+ ;
+- U20 INV_X4 + PLACED ( 82080 91280 ) S
+ ;
+- U21 INV_X4 + PLACED ( 98420 80080 ) FS
+ ;
+- U22 INV_X4 + PLACED ( 88540 85680 ) FS
+ ;
+- U23 AOI21_X2 + PLACED ( 93100 80080 ) FS
+ ;
+- U24 OAI21_X2 + PLACED ( 87400 80080 ) FS
+ ;
+- U25 OAI21_X2 + PLACED ( 91580 94080 ) FN
+ ;
+- U26 AOI21_X2 + PLACED ( 89680 94080 ) FN
+ ;
+- U27 OAI21_X2 + PLACED ( 84360 80080 ) FS
+ ;
+- U28 AOI22_X2 + PLACED ( 80940 80080 ) S
+ ;
+- U29 AOI21_X2 + PLACED ( 86260 91280 ) S
+ ;
+- U30 AOI22_X2 + PLACED ( 81700 88480 ) N
+ ;
+END COMPONENTS
+
+PINS 8 ;
+- clock + NET clock + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 180180 91980 ) W ;
+- in[3] + NET in[3] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 180180 93100 ) W ;
+- in[2] + NET in[2] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 0 89460 ) E ;
+- in[1] + NET in[1] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 81510 0 ) N ;
+- in[0] + NET in[0] + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 91010 0 ) N ;
+- latch + NET latch + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 89490 0 ) N ;
+- dec + NET dec + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 88730 0 ) N ;
+- zero + NET zero + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 92150 0 ) N ;
+END PINS
+
+SPECIALNETS 2 ;
+- VSS  ( * VSS )
+  + ROUTED metal6 20000 + SHAPE RING ( 60090 50040 ) ( * 129880 )
+    NEW metal5 20000 + SHAPE RING ( 50090 60040 ) ( 130060 * )
+    NEW metal5 20000 + SHAPE RING ( 50090 119880 ) ( 130060 * )
+    NEW metal6 20000 + SHAPE RING ( 120060 50040 ) ( * 129880 )
+    NEW metal6 0 + SHAPE RING ( 60090 60040 ) Via5Array-0_1
+    NEW metal6 0 + SHAPE RING ( 60090 119880 ) Via5Array-0_1
+    NEW metal6 0 + SHAPE RING ( 120060 60040 ) Via5Array-0_1
+    NEW metal6 0 + SHAPE RING ( 120060 119880 ) Via5Array-0_1
+  + USE GROUND
+ ;
+- VDD  ( * VDD )
+  + ROUTED metal5 20000 + SHAPE RING ( 10090 20040 ) ( 170060 * )
+    NEW metal6 20000 + SHAPE RING ( 20090 10040 ) ( * 169880 )
+    NEW metal6 20000 + SHAPE RING ( 160060 10040 ) ( * 169880 )
+    NEW metal5 20000 + SHAPE RING ( 10090 159880 ) ( 170060 * )
+    NEW metal6 0 + SHAPE RING ( 20090 20040 ) Via5Array-0_1
+    NEW metal6 0 + SHAPE RING ( 160060 20040 ) Via5Array-0_1
+    NEW metal6 0 + SHAPE RING ( 20090 159880 ) Via5Array-0_1
+    NEW metal6 0 + SHAPE RING ( 160060 159880 ) Via5Array-0_1
+  + USE POWER
+ ;
+END SPECIALNETS
+
+NETS 35 ;
+- clock__L2_N0
+  ( value_reg_3_ CK ) ( value_reg_2_ CK ) ( value_reg_1_ CK )
+  ( value_reg_0_ CK ) ( clock__L2_I0 ZN )
+  + USE CLOCK
+  + WEIGHT 20
+ ;
+- clock__L1_N0
+  ( clock__L1_I0 ZN ) ( clock__L2_I0 A )
+  + USE CLOCK
+  + WEIGHT 20
+ ;
+- in[3]
+  ( PIN in[3] ) ( U9 A1 )
+ ;
+- in[2]
+  ( PIN in[2] ) ( U30 B1 )
+ ;
+- in[1]
+  ( PIN in[1] ) ( U28 A1 )
+ ;
+- in[0]
+  ( PIN in[0] ) ( U13 B2 )
+ ;
+- clock
+  ( PIN clock ) ( clock__L1_I0 A )
+  + USE CLOCK
+  + WEIGHT 20
+ ;
+- latch
+  ( PIN latch ) ( U30 B2 ) ( U28 A2 ) ( U16 A2 ) ( U15 A1 ) ( U13 B1 ) ( U9 A2 )
+ ;
+- dec
+  ( PIN dec ) ( U22 A )
+ ;
+- zero
+  ( PIN zero ) ( U17 ZN ) ( U16 A1 )
+ ;
+- sub_42_S2_A_0_
+  ( U23 B2 ) ( U17 A1 ) ( U14 A2 ) ( U13 C1 ) ( value_reg_0_ Q )
+ ;
+- sub_42_S2_A_1_
+  ( U17 A2 ) ( U7 A2 ) ( value_reg_1_ Q )
+ ;
+- sub_42_S2_A_2_
+  ( U29 B2 ) ( U26 B1 ) ( U17 A3 ) ( U7 A1 ) ( value_reg_2_ Q )
+ ;
+- sub_42_S2_A_3_
+  ( U17 A4 ) ( value_reg_3_ Q )
+ ;
+- n34
+  ( U25 B2 ) ( value_reg_3_ QN )
+ ;
+- n35
+  ( U18 ZN ) ( value_reg_0_ D )
+ ;
+- n36
+  ( U19 ZN ) ( value_reg_2_ D )
+ ;
+- n37
+  ( U29 A ) ( U20 ZN )
+ ;
+- n38
+  ( U24 B1 ) ( U21 ZN ) ( U14 A1 )
+ ;
+- n39
+  ( U28 B2 ) ( U27 B2 ) ( U24 B2 ) ( value_reg_1_ QN )
+ ;
+- n40
+  ( U22 ZN ) ( U16 A3 )
+ ;
+- n41
+  ( U27 B1 ) ( U24 A ) ( U23 ZN )
+ ;
+- n42
+  ( U28 ZN ) ( U27 A )
+ ;
+- n43
+  ( U30 A2 ) ( U28 B1 ) ( U14 ZN ) ( U13 A )
+ ;
+- n44
+  ( U29 ZN ) ( U19 A )
+ ;
+- n45
+  ( U29 B1 ) ( U26 A ) ( U24 ZN )
+ ;
+- n46
+  ( U30 ZN ) ( U20 A )
+ ;
+- n47
+  ( U30 A1 ) ( U7 ZN )
+ ;
+- n48
+  ( U26 ZN ) ( U25 B1 )
+ ;
+- n49
+  ( U25 A ) ( U9 ZN )
+ ;
+- n50
+  ( U26 B2 ) ( U23 B1 ) ( U21 A ) ( U16 ZN ) ( U15 A2 )
+ ;
+- n51
+  ( U23 A ) ( U15 ZN ) ( U13 C2 )
+ ;
+- n52
+  ( U18 A ) ( U13 ZN )
+ ;
+- n53
+  ( U27 ZN ) ( value_reg_1_ D )
+ ;
+- n54
+  ( U25 ZN ) ( value_reg_3_ D )
+ ;
+END NETS
+
+END DESIGN

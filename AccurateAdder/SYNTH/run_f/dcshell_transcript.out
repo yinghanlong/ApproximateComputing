@@ -1,0 +1,55 @@
+
+                        DC Professional (TM)
+                           DC Expert (TM)
+                            DC Ultra (TM)
+                       FloorPlan Manager (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                        Library Compiler (TM)
+                      DesignWare Developer (TM)
+                          DFT Compiler (TM)
+                            BSD Compiler
+                         Power Compiler (TM)
+
+             Version B-2008.09 for linux -- Aug 25, 2008
+              Copyright (c) 1988-2008 by Synopsys, Inc.
+                         ALL RIGHTS RESERVED
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+The above trademark notice does not imply that you are licensed to use 
+all of the listed products. You are licensed to use only those products 
+for which you have lawfully obtained a valid license key.
+
+Initializing...
+# This is the command to read in the netlist 
+# Please ensure that the netlist name and the 
+# top level module name are correct 
+read_verilog -rtl ../.././SYNTH/run_s/Adder_final.v
+Loading db file '/home/pxs/synopsys/NANgate_library/NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.db'
+Loading db file '/usr/synopsys/B-2008.09/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/B-2008.09/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary_PDKv1_2_v2008_10'
+  Loading link library 'gtech'
+Loading verilog file '/home/pxs/AccurateAdder/SYNTH/run_s/Adder_final.v'
+Running PRESTO HDLC
+Compiling source file /home/pxs/AccurateAdder/SYNTH/run_s/Adder_final.v
+Presto compilation completed successfully.
+Current design is now '/home/pxs/AccurateAdder/SYNTH/run_s/full_adder_6.db:full_adder_6'
+Loaded 9 designs.
+Current design is 'full_adder_6'.
+full_adder_6 full_adder_5 full_adder_4 full_adder_3 full_adder_2 full_adder_1 full_adder_7 full_adder_0 Adder
+set current_design Adder
+Adder
+# This command reports the total area of the 
+# design
+report_area > area_netlist.rpt
+exit
+
+Memory usage for this session 29 Mbytes.
+CPU usage for this session 0 seconds.
+
+Thank you...

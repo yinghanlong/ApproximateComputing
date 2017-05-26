@@ -1,0 +1,76 @@
+# vsim -c -novopt test 
+# //  ModelSim SE 10.0c Jul 21 2011 Linux 2.6.18-128.el5
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing /home/pxs/ApproximateAdder/SIMULATION/run_s/mti_lib.test
+# Loading work.test
+# Refreshing /home/pxs/ApproximateAdder/SIMULATION/run_s/mti_lib.Adder
+# Loading work.Adder
+# Loading work.INV_X4
+# Loading work.INV_X8
+# Refreshing /home/pxs/ApproximateAdder/SIMULATION/run_s/mti_lib.approx_full_adder_0
+# Loading work.approx_full_adder_0
+# Refreshing /home/pxs/ApproximateAdder/SIMULATION/run_s/mti_lib.approx_full_adder_3
+# Loading work.approx_full_adder_3
+# Refreshing /home/pxs/ApproximateAdder/SIMULATION/run_s/mti_lib.approx_full_adder_2
+# Loading work.approx_full_adder_2
+# Refreshing /home/pxs/ApproximateAdder/SIMULATION/run_s/mti_lib.approx_full_adder_1
+# Loading work.approx_full_adder_1
+# Refreshing /home/pxs/ApproximateAdder/SIMULATION/run_s/mti_lib.full_adder_0
+# Loading work.full_adder_0
+# Loading work.XOR2_X1
+# Loading work.AOI22_X1
+# Loading work.INV_X2
+# Refreshing /home/pxs/ApproximateAdder/SIMULATION/run_s/mti_lib.full_adder_3
+# Loading work.full_adder_3
+# Refreshing /home/pxs/ApproximateAdder/SIMULATION/run_s/mti_lib.full_adder_2
+# Loading work.full_adder_2
+# Refreshing /home/pxs/ApproximateAdder/SIMULATION/run_s/mti_lib.full_adder_1
+# Loading work.full_adder_1
+# Loading work.DFF_X2
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(245): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/a0
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(245): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(248): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/a1
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(248): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(251): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/a2
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(251): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(278): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_0_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(278): [TFMPC] - Missing connection for port 'QN'.
+# Loading work.seq44
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(281): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_1_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(281): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(284): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_2_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(284): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(287): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_3_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(287): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(290): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_4_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(290): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(293): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_5_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(293): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(296): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_6_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(296): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(299): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_7_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(299): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) ../../PR/run_f/Adder_routed.v(302): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /test/ADD0/Sum_reg_8_
+# ** Warning: (vsim-3722) ../../PR/run_f/Adder_routed.v(302): [TFMPC] - Missing connection for port 'QN'.
+#  
+# ** Note: $finish    : test.v(60)
+#    Time: 80 ns  Iteration: 0  Instance: /test

@@ -1,0 +1,147 @@
+
+                        DC Professional (TM)
+                           DC Expert (TM)
+                            DC Ultra (TM)
+                       FloorPlan Manager (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                        Library Compiler (TM)
+                      DesignWare Developer (TM)
+                          DFT Compiler (TM)
+                            BSD Compiler
+                         Power Compiler (TM)
+
+             Version B-2008.09 for linux -- Aug 25, 2008
+              Copyright (c) 1988-2008 by Synopsys, Inc.
+                         ALL RIGHTS RESERVED
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+The above trademark notice does not imply that you are licensed to use 
+all of the listed products. You are licensed to use only those products 
+for which you have lawfully obtained a valid license key.
+
+Initializing...
+read_verilog -rtl /home/pxs/AccurateAdder/PR/run_f/Adder_routed.v 
+Loading db file '/home/pxs/synopsys/NANgate_library/NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.db'
+Loading db file '/usr/synopsys/B-2008.09/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/B-2008.09/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary_PDKv1_2_v2008_10'
+  Loading link library 'gtech'
+Loading verilog file '/home/pxs/AccurateAdder/PR/run_f/Adder_routed.v'
+Running PRESTO HDLC
+Compiling source file /home/pxs/AccurateAdder/PR/run_f/Adder_routed.v
+Presto compilation completed successfully.
+Current design is now '/home/pxs/AccurateAdder/PR/run_f/full_adder_6.db:full_adder_6'
+Loaded 9 designs.
+Current design is 'full_adder_6'.
+full_adder_6 full_adder_5 full_adder_4 full_adder_3 full_adder_2 full_adder_1 full_adder_7 full_adder_0 Adder
+current_design Adder
+Current design is 'Adder'.
+{Adder}
+set clkname clock
+clock
+set CLK_PER 10
+10
+create_clock -name clock -period 10 -waveform "0 [expr 10 / 2]" clock
+1
+source ../run_s/.synopsys_dc.setup
+true
+source ./designenv.tcl	
+Loading db file '/usr/synopsys/B-2008.09/libraries/syn/dw_foundation.sldb'
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+4
+#report_power -hier -hier_level 3 -analysis_effort medium > Adder_pwr_base.rpt
+report_power -analysis_effort medium > Adder_pwr_base.rpt
+report_clock_tree_power > Adder_clock_pwr_base.rpt
+report_timing > Adder_timing_base.rpt
+read_saif -input /home/pxs/AccurateAdder/SIMULATION/run_s/Adder.saif -instance_name test/ADD0
+Warning: There are 64 objects not found during annotation. (PWR-452)
+1
+#report_power -hier -hier_level 3  -analysis_effort medium > Adder_pwr_pre_annotation.rpt
+report_power -analysis_effort medium > Adder_pwr_pre_annotation.rpt
+report_clock_tree_power > Adder_clock_pwr_pre_annotation.rpt
+report_timing > Adder_timing_pre_annotation.rpt
+read_parasitics /home/pxs/AccurateAdder/PR/run_f/Adder.spef -net_cap_only -complete_with wlm
+Information: Library unit = 1.000000 ns. (SPEF-10)
+Information: Derived delay scale factor = 0.001000. (SPEF-11)
+Information: Library unit = 1.000000 pF. (SPEF-10)
+Information: Derived capacitance scale factor = 1.000000. (SPEF-12)
+Information: Library unit = 1.000000 kOhm. (SPEF-10)
+Information: Derived resistance scale factor = 0.001000. (SPEF-13)
+
+Reading /home/pxs/AccurateAdder/PR/run_f/Adder.spef ...
+
+Information: Path delimiter = /. (SPEF-2)
+Information: Pin delimiter = :. (SPEF-3)
+
+62 RNETs/DNETs have been read.
+
+
+39 net completion steps have been performed.
+0 nets have been skipped due to partial parasitics
+
+1
+#report_power -hier -hier_level 3 -analysis_effort medium  > Adder_pwr_post_annotation.rpt
+report_power -analysis_effort medium  > Adder_pwr_post_annotation.rpt
+report_clock_tree_power > Adder_clock_pwr_post_annotation.rpt
+report_timing > Adder_timing_post_annotation.rpt
+exit
+Information: Defining new variable 'PORT_LOAD'. (CMD-041)
+Information: Defining new variable 'OP_DELAY'. (CMD-041)
+Information: Defining new variable 'WIRE_LOAD_EST'. (CMD-041)
+Information: Defining new variable 'lib_typical'. (CMD-041)
+Information: Defining new variable 'DR_CELL_NAME'. (CMD-041)
+Information: Defining new variable 'PORT_LOAD_CELL'. (CMD-041)
+Information: Defining new variable 'CLK_SKEW'. (CMD-041)
+Information: Defining new variable 'lib_fast'. (CMD-041)
+Information: Defining new variable 'DR_CELL_PIN'. (CMD-041)
+Information: Defining new variable 'lib_slow'. (CMD-041)
+Information: Defining new variable 'FANOUT'. (CMD-041)
+Information: Defining new variable 'DFF_SETUP'. (CMD-041)
+Information: Defining new variable 'DFF_CKQ'. (CMD-041)
+Information: Defining new variable 'CLK_PER'. (CMD-041)
+Information: Defining new variable 'path1'. (CMD-041)
+Information: Defining new variable 'IP_DELAY'. (CMD-041)
+Information: Defining new variable 'clkname'. (CMD-041)
+
+Memory usage for this session 30 Mbytes.
+CPU usage for this session 1 seconds.
+
+Thank you...

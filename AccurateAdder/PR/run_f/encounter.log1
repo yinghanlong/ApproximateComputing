@@ -1,0 +1,321 @@
+Checking out Encounter license ...
+SOC_Encounter_GXL 8.1 license checkout succeeded.
+This Encounter release has been compiled with OA version 22.04-p032.
+sourcing /usr/cadence/encounter/etc/fe/rdaDSL.tcl
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2008.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: First Encounter v08.10-p004_1 (32bit) 11/04/2008 14:34 (Linux 2.6)
+@(#)CDS: NanoRoute v08.10-p008 NR081027-0018/USR58-UB (database version 2.30, 67.1.1) {superthreading v1.11}
+@(#)CDS: CeltIC v08.10-p002_1 (32bit) 10/23/2008 22:04:14 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CTE v08.10-p016_1 (32bit) Oct 26 2008 15:11:51 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CPE v08.10-p009
+--- Starting "First Encounter v08.10-p004_1" on Fri Nov 11 22:44:09 2016 (mem=62.2M) ---
+--- Running on localhost (i686 w/Linux 2.6.18-128.el5) ---
+This version was compiled on Tue Nov 4 14:34:21 PST 2008.
+Set DBUPerIGU to 1000.
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD> loadConfig design.conf
+Reading config file - design.conf
+
+Loading Lef file /home/pxs/synopsys/NANgate_library/NangateOpenCellLibrary_PDKv1_2_v2008_10.lef...
+Set DBUPerIGU to M2 pitch 380.
+Initializing default via types and wire widths ...
+**ERROR: (SOCLF-82):	The y coordinate value 0.5260
+in pin 'A' in macro 'AOI221_X1' is not on the manufacturing grid.
+It's likely to result in placement/routing that can not be manufactured.
+**ERROR: (SOCLF-82):	The y coordinate value 0.5260
+in pin 'A' in macro 'AOI221_X1' is not on the manufacturing grid.
+It's likely to result in placement/routing that can not be manufactured.
+
+Power Planner/ViaGen version 8.1.45 promoted on 09/01/2008.
+viaInitial starts at Fri Nov 11 22:44:48 2016
+viaInitial ends at Fri Nov 11 22:44:48 2016
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/home/pxs/Desktop/Meng/tutorials/lab2Test/./SYNTH/run_f/counter_final.v'
+
+*** Memory Usage v0.144 (Current mem = 192.469M, initial mem = 62.227M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=192.5M) ***
+Set top cell to counter.
+Reading common timing library '/home/pxs/synopsys/NANgate_library/NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib' ...
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 29010) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 29032) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 30291) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 30313) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75282) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75304) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75326) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75348) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75588) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75610) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75632) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75654) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75696) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75718) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75740) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 75762) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 76900) The sdf_cond statement(s) in the cell SDFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 76922) The sdf_cond statement(s) in the cell SDFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 76944) The sdf_cond statement(s) in the cell SDFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib, block starting at: 76966) The sdf_cond statement(s) in the cell SDFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+ read 134 cells in library 'NangateOpenCellLibrary_PDKv1_2_v2008_10' 
+*** End library_loading (cpu=0.01min, mem=4.1M, fe_cpu=0.05min, fe_mem=196.5M) ***
+Starting recursive module instantiation check.
+No recursion found.
+*****NEW dbFlattenCell is used.
+Flattening Cell counter ...
+*** Netlist is unique.
+** info: there are 135 modules.
+** info: there are 24 stdCell insts.
+
+*** Memory Usage v0.144 (Current mem = 196.891M, initial mem = 62.227M) ***
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+INFO (CTE): constraints read successfully
+*** Read timing constraints (cpu=0:00:00.0 mem=199.0M) ***
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X2 BUF_X1 BUF_X4 BUF_X8 CLKBUF_X1 CLKBUF_X3 CLKBUF_X2
+Total number of usable buffers: 7
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X2 INV_X1 INV_X16 INV_X32 INV_X4 INV_X8
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: BUF_X16 BUF_X32
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+*info: set bottom ioPad orient R0
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF.
+Set Input Pin Transition Delay as 120 ps.
+<CMD> restoreDesign . counter_cts_trialroute.enc.dat/counter
+Free PSO.
+Set DBUPerIGU to 1000.
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v0.144 (Current mem = 183.840M, initial mem = 62.227M) ***
+Reading config file - ./counter_cts_trialroute.enc.dat/counter.conf
+
+Loading Lef file /home/pxs/Desktop/Meng/tutorials/lab2Test/PR/run_f/../../../../../../synopsys/NANgate_library/NangateOpenCellLibrary_PDKv1_2_v2008_10.lef...
+Set DBUPerIGU to M2 pitch 380.
+Initializing default via types and wire widths ...
+**ERROR: (SOCLF-82):	The y coordinate value 0.5260
+in pin 'A' in macro 'AOI221_X1' is not on the manufacturing grid.
+It's likely to result in placement/routing that can not be manufactured.
+**ERROR: (SOCLF-82):	The y coordinate value 0.5260
+in pin 'A' in macro 'AOI221_X1' is not on the manufacturing grid.
+It's likely to result in placement/routing that can not be manufactured.
+
+Power Planner/ViaGen version 8.1.45 promoted on 09/01/2008.
+viaInitial starts at Fri Nov 11 22:46:28 2016
+viaInitial ends at Fri Nov 11 22:46:28 2016
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist './counter_cts_trialroute.enc.dat/counter.v'
+
+*** Memory Usage v0.144 (Current mem = 199.125M, initial mem = 62.227M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=199.1M) ***
+Set top cell to counter.
+Reading common timing library '/home/pxs/Desktop/Meng/tutorials/lab2Test/PR/run_f/../../../../../../synopsys/NANgate_library/NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_conditional_nldm.lib' ...
+ read 134 cells in library 'NangateOpenCellLibrary_PDKv1_2_v2008_10' 
+*** End library_loading (cpu=0.01min, mem=0.0M, fe_cpu=0.09min, fe_mem=199.1M) ***
+Starting recursive module instantiation check.
+No recursion found.
+*****NEW dbFlattenCell is used.
+Flattening Cell counter ...
+*** Netlist is unique.
+** info: there are 135 modules.
+** info: there are 26 stdCell insts.
+
+*** Memory Usage v0.144 (Current mem = 199.125M, initial mem = 62.227M) ***
+CTE reading timing constraint file '/home/pxs/Desktop/Meng/tutorials/lab2Test/PR/run_f/./counter_cts_trialroute.enc.dat/counter.pt' ...
+INFO (CTE): constraints read successfully
+*** Read timing constraints (cpu=0:00:00.0 mem=200.1M) ***
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X2 BUF_X1 BUF_X4 BUF_X8 CLKBUF_X1 CLKBUF_X3 CLKBUF_X2
+Total number of usable buffers: 7
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X2 INV_X1 INV_X16 INV_X32 INV_X4 INV_X8
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: BUF_X16 BUF_X32
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+*info: set bottom ioPad orient R0
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF.
+Set Input Pin Transition Delay as 120 ps.
+Reading floorplan file - ./counter_cts_trialroute.enc.dat/counter.fp (mem = 200.9M).
+Set FPlanBox to (0 0 180180 180080)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** End loading floorplan (cpu = 0:00:00.0, mem = 200.9M) ***
+loading place ...
+Reading placement file - ./counter_cts_trialroute.enc.dat/counter.place.gz.
+Reading stdCellPlacement "./counter_cts_trialroute.enc.dat/counter.place.gz" ...
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=200.9M) ***
+Total net length = 4.704e+02 (1.988e+02 2.717e+02) (ext = 3.514e+02)
+loading route ...
+Reading routing file - ./counter_cts_trialroute.enc.dat/counter.route.gz.
+Reading Cadence  routing data (Created by First Encounter v08.10-p004_1 on Thu Nov 10 21:20:23 2016 Format: 7.0)...
+Suppress "**WARN ..." messages.
+routingBox: (0 0) (180180 180080)
+coreBox:    (80180 80080) (100180 100080)
+Un-suppress "**WARN ..." messages.
+*** Total 37 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=200.9M) ***
+
+Reading clock tree spec file './counter_cts_trialroute.enc.dat/counter.ctstch' ...
+
+Using detail cap. scale factor for clock nets.
+RouteType               : FE_CTS_DEFAULT
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.128449(V=0.142029 H=0.11487) (ff/um) [6.42246e-05]
+Est. Res                : 2.53571(V=1.5 H=3.57143)(ohm/um) [0.00126786]
+Est. Via Res            : 5(ohm) [11]
+Est. Via Cap            : 0.0387162(ff)
+M1(H) w=0.065(um) s=0.065(um) p=0.19(um) es=0.315(um) cap=0.11(ff/um) res=5.85(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.07(um) s=0.07(um) p=0.19(um) es=0.31(um) cap=0.115(ff/um) res=3.57(ohm/um) viaRes=6(ohm) viaCap=0.0362505(ff)
+M3(H) w=0.07(um) s=0.07(um) p=0.19(um) es=0.31(um) cap=0.115(ff/um) res=3.57(ohm/um) viaRes=5(ohm) viaCap=0.0376644(ff)
+M4(V) w=0.14(um) s=0.14(um) p=0.28(um) es=0.42(um) cap=0.142(ff/um) res=1.5(ohm/um) viaRes=5(ohm) viaCap=0.0387162(ff)
+M5(H) w=0.14(um) s=0.14(um) p=0.28(um) es=0.42(um) cap=0.142(ff/um) res=1.5(ohm/um) viaRes=3(ohm) viaCap=0.039768(ff)
+M6(V) w=0.14(um) s=0.14(um) p=0.28(um) es=0.42(um) cap=0.142(ff/um) res=1.5(ohm/um) viaRes=3(ohm) viaCap=0.039768(ff)
+M7(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.176(ff/um) res=0.188(ohm/um) viaRes=3(ohm) viaCap=0.0903797(ff)
+M8(V) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.176(ff/um) res=0.188(ohm/um) viaRes=1(ohm) viaCap=0.140992(ff)
+M9(H) w=0.8(um) s=0.8(um) p=1.6(um) es=2.4(um) cap=0.247(ff/um) res=0.0375(ohm/um) viaRes=1(ohm) viaCap=0.268326(ff)
+M10(V) w=0.8(um) s=0.8(um) p=1.6(um) es=2.4(um) cap=0.187(ff/um) res=0.0375(ohm/um) viaRes=0.5(ohm) viaCap=0.347179(ff)
+
+RouteType               : FE_CTS_DEFAULT_LEAF
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.128449(V=0.142029 H=0.11487) (ff/um) [6.42246e-05]
+Est. Res                : 2.53571(V=1.5 H=3.57143)(ohm/um) [0.00126786]
+Est. Via Res            : 5(ohm) [11]
+Est. Via Cap            : 0.0387162(ff)
+M1(H) w=0.065(um) s=0.065(um) p=0.19(um) es=0.315(um) cap=0.11(ff/um) res=5.85(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.07(um) s=0.07(um) p=0.19(um) es=0.31(um) cap=0.115(ff/um) res=3.57(ohm/um) viaRes=6(ohm) viaCap=0.0362505(ff)
+M3(H) w=0.07(um) s=0.07(um) p=0.19(um) es=0.31(um) cap=0.115(ff/um) res=3.57(ohm/um) viaRes=5(ohm) viaCap=0.0376644(ff)
+M4(V) w=0.14(um) s=0.14(um) p=0.28(um) es=0.42(um) cap=0.142(ff/um) res=1.5(ohm/um) viaRes=5(ohm) viaCap=0.0387162(ff)
+M5(H) w=0.14(um) s=0.14(um) p=0.28(um) es=0.42(um) cap=0.142(ff/um) res=1.5(ohm/um) viaRes=3(ohm) viaCap=0.039768(ff)
+M6(V) w=0.14(um) s=0.14(um) p=0.28(um) es=0.42(um) cap=0.142(ff/um) res=1.5(ohm/um) viaRes=3(ohm) viaCap=0.039768(ff)
+M7(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.176(ff/um) res=0.188(ohm/um) viaRes=3(ohm) viaCap=0.0903797(ff)
+M8(V) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.176(ff/um) res=0.188(ohm/um) viaRes=1(ohm) viaCap=0.140992(ff)
+M9(H) w=0.8(um) s=0.8(um) p=1.6(um) es=2.4(um) cap=0.247(ff/um) res=0.0375(ohm/um) viaRes=1(ohm) viaCap=0.268326(ff)
+M10(V) w=0.8(um) s=0.8(um) p=1.6(um) es=2.4(um) cap=0.187(ff/um) res=0.0375(ohm/um) viaRes=0.5(ohm) viaCap=0.347179(ff)
+
+
+****** AutoClockRootPin ******
+AutoClockRootPin 1: clock
+# NoGating         NO
+# SetDPinAsSync    NO
+# SetIoPinAsSync   NO
+# SetAsyncSRPinAsSync   NO
+# SetTriStEnPinAsSync   NO
+# SetBBoxPinAsSync   NO
+# RouteClkNet      NO
+# PostOpt          YES
+# RouteType        FE_CTS_DEFAULT
+# LeafRouteType    FE_CTS_DEFAULT_LEAF
+
+***** !! NOTE !! *****
+
+CTS treats D-pins and I/O pins as non-synchronous pins by default.
+If you want to change the behavior, you need to use the SetDPinAsSync
+or SetIoPinAsSync statement in the clock tree specification file,
+or use the setCTSMode -traceDPinAsLeaf {true|false} command,
+or use the setCTSMode -traceIoPinAsLeaf {true|false} command
+before specifyClockTree command.
+
+*** End specifyClockTree (cpu=0:00:00.0, real=0:00:01.0, mem=205.9M) ***
+<CMD> fit
+**ERROR: (SOCSYT-6000):	No Object Selected.
+<CMD> panCenter 43.327 45.529
+<CMD> windowSelect 44.154 44.256 51.666 37.254
+<CMD> deselectAll
+<CMD> windowSelect 45.937 42.474 49.756 40.946
+<CMD> clearDrc
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> deselectAll
+<CMD> selectWire 45.6600 43.2950 46.3000 43.3650 3 zero
+<CMD> deselectAll
+**ERROR: (SOCSYT-6000):	No Object Selected.
+<CMD> windowSelect 45.480 40.073 47.236 38.797
+<CMD> windowSelect 45.704 38.956 44.236 38.797
+<CMD> fit
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomIn
+<CMD> zoomOut
+<CMD> zoomIn
+<CMD> zoomIn
+
+*** Memory Usage v0.144 (Current mem = 206.914M, initial mem = 62.227M) ***
+--- Ending "First Encounter" (totcpu=0:00:07.8, real=0:04:18, mem=206.9M) ---

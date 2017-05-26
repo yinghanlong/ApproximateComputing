@@ -1,0 +1,814 @@
+(SAIFILE
+(SAIFVERSION "2.0")
+(DIRECTION "backward")
+(DESIGN )
+(DATE "Fri May 19 21:18:00 2017")
+(VENDOR "Synopsys, Inc")
+(PROGRAM_NAME "vcd2saif")
+(VERSION "B-2008.09")
+(DIVIDER / )
+(TIMESCALE 1 ns)
+(DURATION 100)
+(INSTANCE test_fixture
+  (INSTANCE DUT
+    (NET
+      (clock
+        (T0 50) (T1 50) (TX 0)
+        (TC 20) (IG 0)
+      )
+      (clock__L1_N0
+        (T0 50) (T1 50) (TX 0)
+        (TC 20) (IG 0)
+      )
+      (clock__L2_N0
+        (T0 50) (T1 50) (TX 0)
+        (TC 20) (IG 0)
+      )
+      (dec
+        (T0 36) (T1 64) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (in\[0\]
+        (T0 0) (T1 100) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (in\[1\]
+        (T0 0) (T1 100) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (in\[2\]
+        (T0 0) (T1 100) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (in\[3\]
+        (T0 0) (T1 100) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (latch
+        (T0 90) (T1 10) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (n34
+        (T0 75) (T1 0) (TX 25)
+        (TC 0) (IG 0)
+      )
+      (n35
+        (T0 34) (T1 50) (TX 16)
+        (TC 7) (IG 0)
+      )
+      (n36
+        (T0 35) (T1 49) (TX 16)
+        (TC 1) (IG 0)
+      )
+      (n37
+        (T0 90) (T1 10) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (n38
+        (T0 64) (T1 36) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (n39
+        (T0 50) (T1 25) (TX 25)
+        (TC 3) (IG 0)
+      )
+      (n40
+        (T0 64) (T1 36) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (n41
+        (T0 60) (T1 40) (TX 0)
+        (TC 8) (IG 0)
+      )
+      (n42
+        (T0 20) (T1 80) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (n43
+        (T0 70) (T1 30) (TX 0)
+        (TC 6) (IG 0)
+      )
+      (n44
+        (T0 49) (T1 35) (TX 16)
+        (TC 1) (IG 0)
+      )
+      (n45
+        (T0 20) (T1 80) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (n46
+        (T0 10) (T1 90) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (n47
+        (T0 70) (T1 5) (TX 25)
+        (TC 1) (IG 0)
+      )
+      (n48
+        (T0 90) (T1 10) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (n49
+        (T0 10) (T1 90) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (n50
+        (T0 36) (T1 64) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (n51
+        (T0 74) (T1 26) (TX 0)
+        (TC 3) (IG 0)
+      )
+      (n52
+        (T0 50) (T1 34) (TX 16)
+        (TC 7) (IG 0)
+      )
+      (n53
+        (T0 35) (T1 49) (TX 16)
+        (TC 3) (IG 0)
+      )
+      (n54
+        (T0 0) (T1 84) (TX 16)
+        (TC 0) (IG 0)
+      )
+      (sub_42_S2_A_0_
+        (T0 30) (T1 45) (TX 25)
+        (TC 6) (IG 0)
+      )
+      (sub_42_S2_A_1_
+        (T0 25) (T1 50) (TX 25)
+        (TC 3) (IG 0)
+      )
+      (sub_42_S2_A_2_
+        (T0 25) (T1 50) (TX 25)
+        (TC 1) (IG 0)
+      )
+      (sub_42_S2_A_3_
+        (T0 0) (T1 75) (TX 25)
+        (TC 0) (IG 0)
+      )
+      (zero
+        (T0 75) (T1 0) (TX 25)
+        (TC 0) (IG 0)
+      )
+    )
+    (INSTANCE U13
+      (NET
+        (A
+          (T0 70) (T1 30) (TX 0)
+          (TC 6) (IG 0)
+        )
+        (B1
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (B2
+          (T0 0) (T1 100) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (C1
+          (T0 30) (T1 45) (TX 25)
+          (TC 6) (IG 0)
+        )
+        (C2
+          (T0 74) (T1 26) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (ZN
+          (T0 50) (T1 34) (TX 16)
+          (TC 7) (IG 0)
+        )
+        (i_470
+          (T0 34) (T1 50) (TX 16)
+          (TC 7) (IG 0)
+        )
+        (i_471
+          (T0 44) (T1 40) (TX 16)
+          (TC 8) (IG 0)
+        )
+        (i_472
+          (T0 74) (T1 10) (TX 16)
+          (TC 2) (IG 0)
+        )
+        (i_473
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U14
+      (NET
+        (A1
+          (T0 64) (T1 36) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (A2
+          (T0 30) (T1 45) (TX 25)
+          (TC 6) (IG 0)
+        )
+        (ZN
+          (T0 70) (T1 30) (TX 0)
+          (TC 6) (IG 0)
+        )
+        (i_602
+          (T0 30) (T1 70) (TX 0)
+          (TC 6) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U15
+      (NET
+        (A1
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (A2
+          (T0 36) (T1 64) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (ZN
+          (T0 74) (T1 26) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (i_602
+          (T0 26) (T1 74) (TX 0)
+          (TC 3) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U16
+      (NET
+        (A1
+          (T0 75) (T1 0) (TX 25)
+          (TC 0) (IG 0)
+        )
+        (A2
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (A3
+          (T0 64) (T1 36) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (ZN
+          (T0 36) (T1 64) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (i_610
+          (T0 64) (T1 36) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (i_611
+          (T0 74) (T1 10) (TX 16)
+          (TC 1) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U17
+      (NET
+        (A1
+          (T0 30) (T1 45) (TX 25)
+          (TC 6) (IG 0)
+        )
+        (A2
+          (T0 25) (T1 50) (TX 25)
+          (TC 3) (IG 0)
+        )
+        (A3
+          (T0 25) (T1 50) (TX 25)
+          (TC 1) (IG 0)
+        )
+        (A4
+          (T0 0) (T1 75) (TX 25)
+          (TC 0) (IG 0)
+        )
+        (ZN
+          (T0 75) (T1 0) (TX 25)
+          (TC 0) (IG 0)
+        )
+        (i_624
+          (T0 0) (T1 75) (TX 25)
+          (TC 0) (IG 0)
+        )
+        (i_625
+          (T0 0) (T1 75) (TX 25)
+          (TC 0) (IG 0)
+        )
+        (i_626
+          (T0 10) (T1 65) (TX 25)
+          (TC 2) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U18
+      (NET
+        (A
+          (T0 50) (T1 34) (TX 16)
+          (TC 7) (IG 0)
+        )
+        (ZN
+          (T0 34) (T1 50) (TX 16)
+          (TC 7) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U19
+      (NET
+        (A
+          (T0 49) (T1 35) (TX 16)
+          (TC 1) (IG 0)
+        )
+        (ZN
+          (T0 35) (T1 49) (TX 16)
+          (TC 1) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U20
+      (NET
+        (A
+          (T0 10) (T1 90) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (ZN
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U21
+      (NET
+        (A
+          (T0 36) (T1 64) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (ZN
+          (T0 64) (T1 36) (TX 0)
+          (TC 1) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U22
+      (NET
+        (A
+          (T0 36) (T1 64) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (ZN
+          (T0 64) (T1 36) (TX 0)
+          (TC 1) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U23
+      (NET
+        (A
+          (T0 74) (T1 26) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (B1
+          (T0 36) (T1 64) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (B2
+          (T0 30) (T1 45) (TX 25)
+          (TC 6) (IG 0)
+        )
+        (ZN
+          (T0 60) (T1 40) (TX 0)
+          (TC 8) (IG 0)
+        )
+        (i_454
+          (T0 40) (T1 60) (TX 0)
+          (TC 8) (IG 0)
+        )
+        (i_455
+          (T0 66) (T1 34) (TX 0)
+          (TC 7) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U24
+      (NET
+        (A
+          (T0 60) (T1 40) (TX 0)
+          (TC 8) (IG 0)
+        )
+        (B1
+          (T0 64) (T1 36) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (B2
+          (T0 50) (T1 25) (TX 25)
+          (TC 3) (IG 0)
+        )
+        (ZN
+          (T0 20) (T1 80) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (i_658
+          (T0 80) (T1 20) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (i_659
+          (T0 39) (T1 61) (TX 0)
+          (TC 4) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U25
+      (NET
+        (A
+          (T0 10) (T1 90) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (B1
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (B2
+          (T0 75) (T1 0) (TX 25)
+          (TC 0) (IG 0)
+        )
+        (ZN
+          (T0 0) (T1 84) (TX 16)
+          (TC 0) (IG 0)
+        )
+        (i_658
+          (T0 84) (T1 0) (TX 16)
+          (TC 0) (IG 0)
+        )
+        (i_659
+          (T0 74) (T1 10) (TX 16)
+          (TC 1) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U26
+      (NET
+        (A
+          (T0 20) (T1 80) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (B1
+          (T0 25) (T1 50) (TX 25)
+          (TC 1) (IG 0)
+        )
+        (B2
+          (T0 36) (T1 64) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (ZN
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (i_454
+          (T0 10) (T1 90) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (i_455
+          (T0 61) (T1 39) (TX 0)
+          (TC 2) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U27
+      (NET
+        (A
+          (T0 20) (T1 80) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (B1
+          (T0 60) (T1 40) (TX 0)
+          (TC 8) (IG 0)
+        )
+        (B2
+          (T0 50) (T1 25) (TX 25)
+          (TC 3) (IG 0)
+        )
+        (ZN
+          (T0 35) (T1 49) (TX 16)
+          (TC 3) (IG 0)
+        )
+        (i_658
+          (T0 49) (T1 35) (TX 16)
+          (TC 3) (IG 0)
+        )
+        (i_659
+          (T0 29) (T1 55) (TX 16)
+          (TC 4) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U28
+      (NET
+        (A1
+          (T0 0) (T1 100) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (A2
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (B1
+          (T0 70) (T1 30) (TX 0)
+          (TC 6) (IG 0)
+        )
+        (B2
+          (T0 50) (T1 25) (TX 25)
+          (TC 3) (IG 0)
+        )
+        (ZN
+          (T0 20) (T1 80) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (i_522
+          (T0 80) (T1 20) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (i_523
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (i_524
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U29
+      (NET
+        (A
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (B1
+          (T0 20) (T1 80) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (B2
+          (T0 25) (T1 50) (TX 25)
+          (TC 1) (IG 0)
+        )
+        (ZN
+          (T0 49) (T1 35) (TX 16)
+          (TC 1) (IG 0)
+        )
+        (i_454
+          (T0 35) (T1 49) (TX 16)
+          (TC 1) (IG 0)
+        )
+        (i_455
+          (T0 45) (T1 39) (TX 16)
+          (TC 2) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U30
+      (NET
+        (A1
+          (T0 70) (T1 5) (TX 25)
+          (TC 1) (IG 0)
+        )
+        (A2
+          (T0 70) (T1 30) (TX 0)
+          (TC 6) (IG 0)
+        )
+        (B1
+          (T0 0) (T1 100) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (B2
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (ZN
+          (T0 10) (T1 90) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (i_522
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (i_523
+          (T0 100) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (i_524
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U7
+      (NET
+        (A1
+          (T0 25) (T1 50) (TX 25)
+          (TC 1) (IG 0)
+        )
+        (A2
+          (T0 25) (T1 50) (TX 25)
+          (TC 3) (IG 0)
+        )
+        (ZN
+          (T0 70) (T1 5) (TX 25)
+          (TC 1) (IG 0)
+        )
+        (i_602
+          (T0 5) (T1 70) (TX 25)
+          (TC 1) (IG 0)
+        )
+      )
+    )
+    (INSTANCE U9
+      (NET
+        (A1
+          (T0 0) (T1 100) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (A2
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (ZN
+          (T0 10) (T1 90) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (i_566
+          (T0 90) (T1 10) (TX 0)
+          (TC 2) (IG 0)
+        )
+      )
+    )
+    (INSTANCE clock__L1_I0
+      (NET
+        (A
+          (T0 50) (T1 50) (TX 0)
+          (TC 20) (IG 0)
+        )
+        (ZN
+          (T0 50) (T1 50) (TX 0)
+          (TC 20) (IG 0)
+        )
+      )
+    )
+    (INSTANCE clock__L2_I0
+      (NET
+        (A
+          (T0 50) (T1 50) (TX 0)
+          (TC 20) (IG 0)
+        )
+        (ZN
+          (T0 50) (T1 50) (TX 0)
+          (TC 20) (IG 0)
+        )
+      )
+    )
+    (INSTANCE value_reg_0_
+      (NET
+        (CK
+          (T0 50) (T1 50) (TX 0)
+          (TC 20) (IG 0)
+        )
+        (D
+          (T0 34) (T1 50) (TX 16)
+          (TC 7) (IG 0)
+        )
+        (IQ
+          (T0 30) (T1 45) (TX 25)
+          (TC 6) (IG 0)
+        )
+        (IQN
+          (T0 45) (T1 30) (TX 25)
+          (TC 6) (IG 0)
+        )
+        (NOTIFIER
+          (T0 0) (T1 0) (TX 100)
+          (TC 0) (IG 0)
+        )
+        (Q
+          (T0 30) (T1 45) (TX 25)
+          (TC 6) (IG 0)
+        )
+        (QN
+          (T0 45) (T1 30) (TX 25)
+          (TC 6) (IG 0)
+        )
+        (nextstate
+          (T0 34) (T1 50) (TX 16)
+          (TC 7) (IG 0)
+        )
+      )
+    )
+    (INSTANCE value_reg_1_
+      (NET
+        (CK
+          (T0 50) (T1 50) (TX 0)
+          (TC 20) (IG 0)
+        )
+        (D
+          (T0 35) (T1 49) (TX 16)
+          (TC 3) (IG 0)
+        )
+        (IQ
+          (T0 25) (T1 50) (TX 25)
+          (TC 3) (IG 0)
+        )
+        (IQN
+          (T0 50) (T1 25) (TX 25)
+          (TC 3) (IG 0)
+        )
+        (NOTIFIER
+          (T0 0) (T1 0) (TX 100)
+          (TC 0) (IG 0)
+        )
+        (Q
+          (T0 25) (T1 50) (TX 25)
+          (TC 3) (IG 0)
+        )
+        (QN
+          (T0 50) (T1 25) (TX 25)
+          (TC 3) (IG 0)
+        )
+        (nextstate
+          (T0 35) (T1 49) (TX 16)
+          (TC 3) (IG 0)
+        )
+      )
+    )
+    (INSTANCE value_reg_2_
+      (NET
+        (CK
+          (T0 50) (T1 50) (TX 0)
+          (TC 20) (IG 0)
+        )
+        (D
+          (T0 35) (T1 49) (TX 16)
+          (TC 1) (IG 0)
+        )
+        (IQ
+          (T0 25) (T1 50) (TX 25)
+          (TC 1) (IG 0)
+        )
+        (IQN
+          (T0 50) (T1 25) (TX 25)
+          (TC 1) (IG 0)
+        )
+        (NOTIFIER
+          (T0 0) (T1 0) (TX 100)
+          (TC 0) (IG 0)
+        )
+        (Q
+          (T0 25) (T1 50) (TX 25)
+          (TC 1) (IG 0)
+        )
+        (QN
+          (T0 50) (T1 25) (TX 25)
+          (TC 1) (IG 0)
+        )
+        (nextstate
+          (T0 35) (T1 49) (TX 16)
+          (TC 1) (IG 0)
+        )
+      )
+    )
+    (INSTANCE value_reg_3_
+      (NET
+        (CK
+          (T0 50) (T1 50) (TX 0)
+          (TC 20) (IG 0)
+        )
+        (D
+          (T0 0) (T1 84) (TX 16)
+          (TC 0) (IG 0)
+        )
+        (IQ
+          (T0 0) (T1 75) (TX 25)
+          (TC 0) (IG 0)
+        )
+        (IQN
+          (T0 75) (T1 0) (TX 25)
+          (TC 0) (IG 0)
+        )
+        (NOTIFIER
+          (T0 0) (T1 0) (TX 100)
+          (TC 0) (IG 0)
+        )
+        (Q
+          (T0 0) (T1 75) (TX 25)
+          (TC 0) (IG 0)
+        )
+        (QN
+          (T0 75) (T1 0) (TX 25)
+          (TC 0) (IG 0)
+        )
+        (nextstate
+          (T0 0) (T1 84) (TX 16)
+          (TC 0) (IG 0)
+        )
+      )
+    )
+  )
+)
+)

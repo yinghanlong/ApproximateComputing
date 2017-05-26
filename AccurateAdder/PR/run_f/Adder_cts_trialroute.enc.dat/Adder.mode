@@ -1,0 +1,6 @@
+setAnalysisMode -analysisType single -asyncChecks async -checkType setup -clkSrcPath false -clockPropagation forcedIdeal -cts preCTS -skew true -virtualIPO false
+setExtractRCMode  -engine default
+setDelayCalMode -engine default
+setNanoRouteMode -quiet -drouteStartIteration 0
+
+setPlaceMode -ignoreScan true -timingDriven true

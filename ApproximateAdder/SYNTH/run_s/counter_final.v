@@ -1,0 +1,36 @@
+
+module counter ( clock, in, latch, dec, zero );
+  input [3:0] in;
+  input clock, latch, dec;
+  output zero;
+  wire   sub_47_S2_A_0_, sub_47_S2_A_1_, sub_47_S2_A_2_, sub_47_S2_A_3_, n34,
+         n35, n38, n39, n41, n42, n43, n45, n46, n47, n48, n49, n50, n51, n52,
+         n53, n54, n56, n57, n58, n59;
+
+  DFF_X1 value_reg_0_ ( .D(n35), .CK(clock), .Q(sub_47_S2_A_0_) );
+  DFF_X2 value_reg_3_ ( .D(n54), .CK(clock), .Q(sub_47_S2_A_3_), .QN(n34) );
+  DFF_X2 value_reg_1_ ( .D(n53), .CK(clock), .Q(sub_47_S2_A_1_), .QN(n39) );
+  DFF_X1 value_reg_2_ ( .D(n56), .CK(clock), .Q(sub_47_S2_A_2_), .QN(n58) );
+  OAI21_X1 U8 ( .B1(n41), .B2(n39), .A(n42), .ZN(n53) );
+  AOI22_X1 U9 ( .A1(in[1]), .A2(latch), .B1(n43), .B2(n39), .ZN(n42) );
+  AOI22_X1 U11 ( .A1(n47), .A2(n43), .B1(in[2]), .B2(latch), .ZN(n46) );
+  NOR2_X1 U12 ( .A1(sub_47_S2_A_2_), .A2(sub_47_S2_A_1_), .ZN(n47) );
+  OAI21_X1 U13 ( .B1(n48), .B2(n34), .A(n49), .ZN(n54) );
+  NAND2_X1 U14 ( .A1(in[3]), .A2(latch), .ZN(n49) );
+  AOI21_X1 U15 ( .B1(sub_47_S2_A_2_), .B2(n50), .A(n45), .ZN(n48) );
+  OAI21_X1 U16 ( .B1(n38), .B2(n39), .A(n41), .ZN(n45) );
+  AOI21_X1 U17 ( .B1(n50), .B2(sub_47_S2_A_0_), .A(n51), .ZN(n41) );
+  AOI221_X1 U18 ( .B1(n51), .B2(sub_47_S2_A_0_), .C1(in[0]), .C2(latch), .A(
+        n43), .ZN(n52) );
+  NOR2_X1 U19 ( .A1(n38), .A2(sub_47_S2_A_0_), .ZN(n43) );
+  NOR2_X1 U20 ( .A1(latch), .A2(n50), .ZN(n51) );
+  NOR3_X1 U21 ( .A1(zero), .A2(latch), .A3(n59), .ZN(n50) );
+  NOR4_X2 U23 ( .A1(sub_47_S2_A_0_), .A2(sub_47_S2_A_1_), .A3(sub_47_S2_A_2_), 
+        .A4(sub_47_S2_A_3_), .ZN(zero) );
+  INV_X2 U24 ( .A(n50), .ZN(n38) );
+  OAI21_X1 U25 ( .B1(n57), .B2(n58), .A(n46), .ZN(n56) );
+  INV_X4 U26 ( .A(n45), .ZN(n57) );
+  INV_X2 U27 ( .A(n52), .ZN(n35) );
+  INV_X4 U28 ( .A(dec), .ZN(n59) );
+endmodule
+

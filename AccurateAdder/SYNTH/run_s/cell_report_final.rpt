@@ -1,0 +1,48 @@
+ 
+****************************************
+Report : cell
+Design : Adder
+Version: B-2008.09
+Date   : Wed May 24 17:04:19 2017
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+Sum_reg[0]                DFF_X2          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+Sum_reg[1]                DFF_X2          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+Sum_reg[2]                DFF_X2          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+Sum_reg[3]                DFF_X2          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+Sum_reg[4]                DFF_X2          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+Sum_reg[5]                DFF_X2          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+Sum_reg[6]                DFF_X2          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+Sum_reg[7]                DFF_X2          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+Sum_reg[8]                DFF_X2          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+U3                        AND2_X4         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.0640  
+a0                        full_adder_0                      5.0540  h
+a1                        full_adder_7                      5.0540  h
+a2                        full_adder_6                      5.0540  h
+a3                        full_adder_5                      5.0540  h
+a4                        full_adder_4                      5.0540  h
+a5                        full_adder_3                      5.0540  h
+a6                        full_adder_2                      5.0540  h
+a7                        full_adder_1                      5.0540  h
+--------------------------------------------------------------------------------
+Total 18 cells                                             84.5880
+1

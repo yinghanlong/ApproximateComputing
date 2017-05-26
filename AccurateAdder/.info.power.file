@@ -1,0 +1,15 @@
+
+	######################## RUN INFORMATION #############################;
+
+	FLOW TO BE RUN WITH THE PARAMETERS:
+	The Operation Type                 (-op)          = power; 
+	The Name of the top level module   (-mod)         = Adder;
+	The Name of the top level module   (-net)         = ./SYNTH/run_s/Adder_final.v;
+	The Clock Name 	    			  (-clkname) 	   	  = clock;
+	The Clock Period 					(-period) 	   = 10;
+	The Backward SAIF file				(-saif)    	   = SIMULATION/run_s/Adder.saif;
+	The Hierarchical Instance of design in testbench			(-inst)    	   = test/ADD0;
+
+	PRESENT WORKING DIRECTORY IS: /home/pxs/AccurateAdder;
+	######################## RUN INFORMATION #############################;
+
